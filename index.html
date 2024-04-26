@@ -43,20 +43,21 @@
     <!-- Magnific Popup CSS -->
     <link rel="stylesheet" href="css/magnific-popup.css" />
 
-    <!-- Medipro CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <div id="header"></div>
-    <script>
-      fetch("/header.html")
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById("header").innerHTML = html;
-        });
-    </script>
+    <div id="header">
+      <script>
+        fetch("/header.html")
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById("header").innerHTML = html;
+          });
+      </script>
+    </div>
 
     <!-- Slider Area -->
     <section class="slider">
@@ -106,7 +107,7 @@
                     At Owate Consulting we leverage career navigation
                     <span class="highlight">research</span> and
                     <span class="highlight">data</span> to provide you with
-                    tailord tools for your unique carrer development needs
+                    tailord tools for your unique carrer development needs.
                   </p>
                 </div>
               </div>
