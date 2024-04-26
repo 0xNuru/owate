@@ -463,7 +463,7 @@ Version:	1.1
     font-weight: 400;
   }
   .slicknav_menu .slicknav_icon-bar {
-    background-color: #1a76d1;
+    background-image: linear-gradient(to right, #bd1352, #6d2576);
     box-shadow: none;
     text-shadow: none;
   }

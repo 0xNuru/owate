@@ -49,69 +49,14 @@
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <!-- Header Area -->
-    <header class="header">
-      <!-- Header Inner -->
-      <div class="header-inner">
-        <div class="container">
-          <div class="inner">
-            <div class="row">
-              <div class="col-lg-3 col-md-3 col-12">
-                <!-- Start Logo -->
-                <div class="logo">
-                  <a href="index.html"
-                    ><img class="logo-image" src="img/logo.png" alt="#"
-                  /></a>
-                </div>
-                <!-- End Logo -->
-                <!-- Mobile Nav -->
-                <div class="mobile-nav"></div>
-                <!-- End Mobile Nav -->
-              </div>
-              <div class="col-lg-9 col-md-9 col-12">
-                <!-- Main Menu -->
-                <div class="main-menu">
-                  <nav class="navigation">
-                    <ul class="nav menu">
-                      <li>
-                        <a href="#">About</a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          >Services <i class="icofont-rounded-down"></i
-                        ></a>
-                        <ul class="dropdown">
-                          <li><a href="404.html">404 Error</a></li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="#"
-                          >FAQs <i class="icofont-rounded-down"></i
-                        ></a>
-                        <ul class="dropdown">
-                          <li><a href="blog-single.html">Blog Details</a></li>
-                        </ul>
-                      </li>
-                      <li><a href="contact.html">Contact</a></li>
-                      <div class="col-lg-2 col-12">
-                        <div class="get-quote">
-                          <a href="appointment.html" class="btn"
-                            >Book consultation</a
-                          >
-                        </div>
-                      </div>
-                    </ul>
-                  </nav>
-                </div>
-                <!--/ End Main Menu -->
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/ End Header Inner -->
-    </header>
-    <!-- End Header Area -->
+    <div id="header"></div>
+    <script>
+      fetch("/header.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("header").innerHTML = html;
+        });
+    </script>
 
     <!-- Slider Area -->
     <section class="slider">
@@ -129,10 +74,6 @@
                     <span class="highlight"> CLARITY </span> to your carrer
                     jounerys.
                   </h1>
-                  <div class="button">
-                    <a href="#" class="btn">Book consultaion</a>
-                    <a href="#" class="btn primary">About Us</a>
-                  </div>
                 </div>
               </div>
               <!-- Image Column -->
@@ -141,7 +82,7 @@
                   <img
                     class="carousel-image"
                     src="img/owate-carousel1.jpg"
-                    alt="Medical Services"
+                    alt="owwate-carousel"
                   />
                 </div>
               </div>
@@ -167,10 +108,6 @@
                     <span class="highlight">data</span> to provide you with
                     tailord tools for your unique carrer development needs.
                   </p>
-                  <div class="button">
-                    <a href="#" class="btn">Book consultaion</a>
-                    <a href="#" class="btn primary">About Us</a>
-                  </div>
                 </div>
               </div>
               <!-- Image Column -->
@@ -179,7 +116,7 @@
                   <img
                     class="carousel-image"
                     src="img/owate-carousel1.jpg"
-                    alt="Medical Services"
+                    alt="owate-carousel1"
                   />
                 </div>
               </div>
@@ -192,7 +129,7 @@
     <!--/ End Slider Area -->
 
     <!-- Start clients -->
-    <div class="section-title"><h3>Trusted by</h3></div>
+    <!-- <div class="section-title"><h3>Trusted by</h3></div>
     <div class="clients overlay">
       <div class="container">
         <div class="row">
@@ -229,7 +166,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!--/Ens clients -->
 
     <!-- Start Schedule Area -->
@@ -238,94 +175,191 @@
       <div class="container">
         <div class="schedule-inner">
           <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- single-schedule -->
+            <!-- first-service -->
+            <div class="col-lg-6 col-md-6 col-12">
               <div class="single-schedule first">
-                <div class="inner">
-                  <div class="icon">
-                    <i class="fa fa-ambulance"></i>
-                  </div>
-                  <div class="single-content">
-                    <h4>Free Introductory Sessions</h4>
-                    <a href="#"
-                      >LEARN MORE<i class="fa fa-long-arrow-right"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- single-schedule-->
-              <!-- single-schedule -->
-              <div class="single-schedule second">
-                <div class="inner">
-                  <div class="icon">
-                    <i class="fa fa-ambulance"></i>
-                  </div>
-                  <div class="single-content">
-                    <h4>
-                      Resume Assesment & <span></span> Interview Prep (RAIP)
-                    </h4>
-                    <a href="#"
-                      >LEARN MORE<i class="fa fa-long-arrow-right"></i
-                    ></a>
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/owate_secondary_logo.png"
+                        class="img-fluid rounded-start"
+                        alt="services-img"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Free Introductory <span></span> Sessions
+                        </h5>
+                        <p class="card-text service">
+                          This is a wider card with supporting text below
+                        </p>
+                      </div>
+                      <a href="/services/free-intro.html"
+                        >LEARN MORE<i class="fa fa-long-arrow-right"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- single-schedule-->
+            <!-- first-service-end-->
 
-              <!-- single-schedule -->
-              <div class="single-schedule third">
-                <div class="inner">
-                  <div class="icon">
-                    <i class="fa fa-ambulance"></i>
-                  </div>
-                  <div class="single-content">
-                    <h4>Supplementary Skill Training (SST)</h4>
-                    <a href="#"
-                      >LEARN MORE<i class="fa fa-long-arrow-right"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- single-schedule-->
-              <!-- single-schedule -->
+            <!-- second-service -->
+            <div class="col-lg-6 col-md-6 col-12">
               <div class="single-schedule first">
-                <div class="inner">
-                  <div class="icon">
-                    <i class="fa fa-ambulance"></i>
-                  </div>
-                  <div class="single-content">
-                    <h4>Career Exploration & Advancement (CEA)</h4>
-                    <a href="#"
-                      >LEARN MORE<i class="fa fa-long-arrow-right"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-              <!-- single-schedule-->
-              <div class="single-schedule second">
-                <div class="inner">
-                  <div class="icon">
-                    <i class="icofont-prescription"></i>
-                  </div>
-                  <div class="single-content">
-                    <h4>Ask Me Anything (AMA)</h4>
-                    <a href="#"
-                      >LEARN MORE<i class="fa fa-long-arrow-right"></i
-                    ></a>
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/owate_secondary_logo.png"
+                        class="img-fluid rounded-start"
+                        alt="owate_secondary_logo"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Resume Assesment & Interview Prep
+                        </h5>
+                        <p class="card-text service">
+                          This is a wider card with supporting text below
+                        </p>
+                      </div>
+                      <a href="/services/raip.html"
+                        >LEARN MORE<i class="fa fa-long-arrow-right"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-12 col-12">
-              <!-- single-schedule-->
+            <!-- second-service-end -->
+            <!-- third-service -->
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="single-schedule first">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/owate_secondary_logo.png"
+                        class="img-fluid rounded-start"
+                        alt="owate_secondary_logo"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Supplementary Skills <span></span>Training
+                        </h5>
+                        <p class="card-text service">
+                          This is a wider card with supporting text below
+                        </p>
+                      </div>
+                      <a href="/services/sst.html"
+                        >LEARN MORE<i class="fa fa-long-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- third service -schedule-->
+            <!-- fourth-service -->
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="single-schedule first">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/owate_secondary_logo.png"
+                        class="img-fluid rounded-start"
+                        alt="owate_secondary_logo"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Career Exploration Advancement
+                        </h5>
+                        <p class="card-text service">
+                          This is a wider card with supporting text below
+                        </p>
+                      </div>
+                      <a href="/services/cea.html"
+                        >LEARN MORE<i class="fa fa-long-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fourth-service-end-->
+
+            <!-- fifth-service -->
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="single-schedule first">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/owate_secondary_logo.png"
+                        class="img-fluid rounded-start"
+                        alt="owate_secondary_logo"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Ask Me Anything <span></span>(AMA)
+                        </h5>
+                        <p class="card-text service">
+                          This is a wider card with supporting text below
+                        </p>
+                      </div>
+                      <a href="/services/ama.html"
+                        >LEARN MORE<i class="fa fa-long-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fifth-service-end -->
+            <!-- sixth-service -->
+            <div class="col-lg-6 col-md-6 col-12">
+              <div class="single-schedule first">
+                <div class="card mb-3" style="max-width: 540px">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img
+                        src="img/owate_secondary_logo.png"
+                        class="img-fluid rounded-start"
+                        alt="owate_secondary_logo"
+                      />
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          Holistic Career Development Program
+                        </h5>
+                        <p class="card-text service">
+                          This is a wider card with supporting text below
+                        </p>
+                      </div>
+                      <a href="/services/hcdp.html"
+                        >LEARN MORE<i class="fa fa-long-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  sixth-service-end -->
+
+            <!-- single-schedule-->
+            <!-- <div class="col-lg-4 col-md-12 col-12">
               <div class="single-schedule third">
                 <div class="inner">
                   <div class="icon">
@@ -339,7 +373,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -1100,181 +1134,14 @@
     </section>
     <!-- /End Newsletter Area -->
 
-    <!-- Footer Area -->
-    <footer id="footer" class="footer">
-      <!-- Footer Top -->
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="single-footer">
-                <h2>About Us</h2>
-                <p>
-                  Lorem ipsum dolor sit am consectetur adipisicing elit do
-                  eiusmod tempor incididunt ut labore dolore magna.
-                </p>
-                <!-- Social -->
-                <ul class="social">
-                  <li>
-                    <a href="#"><i class="icofont-facebook"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icofont-google-plus"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icofont-twitter"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icofont-vimeo"></i></a>
-                  </li>
-                  <li>
-                    <a href="#"><i class="icofont-pinterest"></i></a>
-                  </li>
-                </ul>
-                <!-- End Social -->
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="single-footer f-link">
-                <h2>Quick Links</h2>
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 col-12">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >Home</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >About Us</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >Services</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >Our Cases</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >Other Links</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-12">
-                    <ul>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >Consuling</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >Finance</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >Testimonials</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >FAQ</a
-                        >
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><i class="fa fa-caret-right" aria-hidden="true"></i
-                          >Contact Us</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="single-footer">
-                <h2>Open Hours</h2>
-                <p>
-                  Lorem ipsum dolor sit ame consectetur adipisicing elit do
-                  eiusmod tempor incididunt.
-                </p>
-                <ul class="time-sidual">
-                  <li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
-                  <li class="day">Saturday <span>9.00-18.30</span></li>
-                  <li class="day">Monday - Thusday <span>9.00-15.00</span></li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-              <div class="single-footer">
-                <h2>Newsletter</h2>
-                <p>
-                  subscribe to our newsletter to get allour news in your inbox..
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                </p>
-                <form
-                  action="mail/mail.php"
-                  method="get"
-                  target="_blank"
-                  class="newsletter-inner"
-                >
-                  <input
-                    name="email"
-                    placeholder="Email Address"
-                    class="common-input"
-                    onfocus="this.placeholder = ''"
-                    onblur="this.placeholder = 'Your email address'"
-                    required=""
-                    type="email"
-                  />
-                  <button class="button">
-                    <i class="icofont icofont-paper-plane"></i>
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/ End Footer Top -->
-      <!-- Copyright -->
-      <div class="copyright">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-12">
-              <div class="copyright-content">
-                <p>
-                  © Copyright 2018 | All Rights Reserved by
-                  <a href="https://www.wpthemesgrid.com" target="_blank"
-                    >wpthemesgrid.com</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--/ End Copyright -->
-    </footer>
-    <!--/ End Footer Area -->
+    <div id="footer"></div>
+    <script>
+      fetch("/footer.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("footer").innerHTML = html;
+        });
+    </script>
 
     <!-- jquery Min JS -->
     <script src="js/jquery.min.js"></script>
