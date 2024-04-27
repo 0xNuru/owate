@@ -81,7 +81,7 @@ Version:	1.1
       loop: true,
       autoplay: true,
       smartSpeed: 500,
-      autoplayTimeout: 11000,
+      autoplayTimeout: 7000,
       singleItem: true,
       autoplayHoverPause: true,
       items: 1,

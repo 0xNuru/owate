@@ -416,8 +416,8 @@ a:hover {
   top: 0;
   height: 100%;
   width: 100%;
-  background: #fceef5;
-  opacity: 0.8;
+  /* background: #fceef5; */
+  /* opacity: 0.8; */
 }
 /* Bread Crumbs */
 .breadcrumbs {

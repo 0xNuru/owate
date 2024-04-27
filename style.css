@@ -626,12 +626,19 @@ body {
 .schedule {
   background: #fff;
   margin-top: 100px;
+  margin-bottom: 70px;
   padding: 0;
 }
 .schedule .schedule-inner {
   position: relative;
   z-index: 9;
 }
+.single-schedule .icofont {
+  color: #bd1352; /* Reddish color */
+  font-size: 100px; /* Large font size */
+  margin-top: 10px; /* Padding at the top */
+}
+
 .schedule .single-schedule {
   position: relative;
   text-align: left;
@@ -924,7 +931,7 @@ body {
   right: -72px;
   top: 60px;
   width: 118px;
-  border-bottom: 3px dotted #1a76d1;
+  border-bottom: 3px dotted #bd1352;
 }
 .Feautes .single-features.last::before {
   display: none;
@@ -934,7 +941,7 @@ body {
 }
 .Feautes .single-features .signle-icon i {
   font-size: 50px;
-  color: #1a76d1;
+  color: #bd1352;
   position: absolute;
   left: 50%;
   margin-left: -50px;
@@ -950,7 +957,7 @@ body {
   transition: all 0.4s ease;
 }
 .Feautes .single-features:hover .signle-icon i {
-  background: #1a76d1;
+  background-image: linear-gradient(to right, #bd1352, #6d2576);
   color: #fff;
   border-color: transparent;
 }
@@ -977,7 +984,7 @@ body {
   padding: 120px 0;
 }
 .fun-facts {
-  background: url("img/fun-bg.jpg");
+  background-image: linear-gradient(to right, #bd1352, #6d2576);
   background-size: cover;
   background-repeat: no-repeat;
 }
