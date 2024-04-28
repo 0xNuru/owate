@@ -638,7 +638,9 @@ body {
   font-size: 100px; /* Large font size */
   margin-top: 10px; /* Padding at the top */
 }
-
+.schedule .services {
+  padding: 20px;
+}
 .schedule .single-schedule {
   position: relative;
   text-align: left;
@@ -769,6 +771,7 @@ body {
 .schedule .single-schedule p {
   color: black;
   margin-top: 22px;
+  font-size: medium;
 }
 .schedule .single-schedule a {
   color: #bd1352;
@@ -1085,18 +1088,32 @@ body {
 }
 /* Start Faq CSS */
 .why-choose {
-  background: #fff;
+  background: #d9d9d9;
+  border-radius: 15px;
+  /* height: 100%; */
+  width: auto;
+  margin: 0 15%;
 }
-.why-choose .choose-right {
+.why-choose .why-choose-video {
   height: 100%;
   width: 100%;
-  background-image: url("img/video-bg.jpg");
+  border-radius: 15px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
 }
-.why-choose .choose-right .video {
+
+.why-choose .why-choose-video img {
+  border-radius: 45px;
+  padding: 30px;
+}
+
+.tinted-image {
+  filter: brightness(0.5); /* Adjust filter for desired tint effect */
+}
+
+.why-choose .why-choose-video .video {
   color: #fff;
   height: 70px;
   width: 70px;
@@ -1109,7 +1126,7 @@ body {
   margin-left: -35px;
   margin-top: -35px;
   font-size: 21px;
-  background: #1a76d1;
+  background: #bd1352;
   padding-left: 4px;
 }
 .why-choose .choose-right .video:hover {
@@ -1141,6 +1158,11 @@ body {
 .why-choose .video-image .waves-block .wave-3 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+}
+.why-choose-details {
+  padding: 0 30px;
+  align-items: center;
+  padding-bottom: 10px;
 }
 /*=======================
 	End Why choose CSS
@@ -2837,7 +2859,7 @@ body {
 .appointment .form input {
   width: 100%;
   height: 50px;
-  border: 1px solid #eee;
+  border: 1px solid #bd1352;
   text-transform: capitalize;
   padding: 0px 18px;
   color: #555;
@@ -2850,7 +2872,7 @@ body {
   width: 100%;
   height: 200px;
   padding: 18px;
-  border: 1px solid #eee;
+  border: 1px solid #bd1352;
   text-transform: capitalize;
   resize: none;
   border-radius: 4px;
@@ -2859,7 +2881,7 @@ body {
   width: 100%;
   height: 50px;
   line-height: 50px;
-  border: 1px solid #eee;
+  border: 1px solid #bd1352;
   text-transform: capitalize;
   padding: 0px 18px;
   color: #999;

@@ -49,15 +49,63 @@
     <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
-    <div id="header">
-      <script>
-        fetch("/header.html")
-          .then((response) => response.text())
-          .then((html) => {
-            document.getElementById("header").innerHTML = html;
-          });
-      </script>
+    <!-- Header Area -->
+<header class="header">
+  <!-- Header Inner -->
+  <div class="header-inner">
+    <div class="container">
+      <div class="inner">
+        <div class="row">
+          <div class="col-lg-3 col-md-3 col-12">
+            <!-- Start Logo -->
+            <div class="logo">
+              <a href="index.html"
+                ><img class="logo-image" src="img/logo.png" alt="#"
+              /></a>
+            </div>
+            <!-- End Logo -->
+            <!-- Mobile Nav -->
+            <div class="mobile-nav"></div>
+            <!-- End Mobile Nav -->
+          </div>
+          <div class="col-lg-9 col-md-9 col-12">
+            <!-- Main Menu -->
+            <div class="main-menu">
+              <nav class="navigation">
+                <ul class="nav menu">
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#services">Services </a>
+                  </li>
+                  <li>
+                    <a href="#">FAQs <i class="icofont-rounded-down"></i></a>
+                    <ul class="dropdown">
+                      <li><a href="blog-single.html">Blog Details</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <div class="col-lg-2 col-12">
+                    <div class="get-quote">
+                      <a href="appointment.html" class="btn"
+                        >Book consultation</a
+                      >
+                    </div>
+                  </div>
+                </ul>
+              </nav>
+            </div>
+            <!--/ End Main Menu -->
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+  <!--/ End Header Inner -->
+</header>
+<!-- End Header Area -->
+
 
     <!-- Slider Area -->
     <section class="slider">
@@ -170,8 +218,66 @@
     </div> -->
     <!--/Ens clients -->
 
+    <!-- Start Feautes -->
+    <section class="Feautes section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>We Are Ready to Propel Your Career</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-12">
+            <!-- Start Single features -->
+            <div class="single-features">
+              <div class="signle-icon">
+                <i class="icofont-search-job"></i>
+              </div>
+              <h3>Job Searching</h3>
+              <p>
+                Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+                vulputate.
+              </p>
+            </div>
+            <!-- End Single features -->
+          </div>
+          <div class="col-lg-4 col-12">
+            <!-- Start Single features -->
+            <div class="single-features">
+              <div class="signle-icon">
+                <i class="icofont-brainstorming"></i>
+              </div>
+              <h3>AI Career Essentials</h3>
+              <p>
+                Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+                vulputate.
+              </p>
+            </div>
+            <!-- End Single features -->
+          </div>
+          <div class="col-lg-4 col-12">
+            <!-- Start Single features -->
+            <div class="single-features last">
+              <div class="signle-icon">
+                <i class="icofont-chart-growth"></i>
+              </div>
+              <h3>Career Growth</h3>
+              <p>
+                Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
+                vulputate.
+              </p>
+            </div>
+            <!-- End Single features -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/ End Feautes -->
+
     <!-- Start Schedule Area -->
-    <section class="schedule">
+    <section id="services" class="schedule">
       <div class="section-title"><h3>Our Services</h3></div>
       <div class="container">
         <div class="schedule-inner">
@@ -180,13 +286,13 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="single-schedule first">
                 <div class="card mb-3" style="max-width: 540px">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                     <i class="icofont-google-talk icofont"></i>
+                  <div class="row g-0 services">
+                    <div class="col-md-4 services">
+                      <i class="icofont-mic icofont"></i>
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="card-title">
+                        <h5 class="card-title service">
                           Free Introductory <span></span> Sessions
                         </h5>
                         <p class="card-text service">
@@ -207,13 +313,13 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="single-schedule first">
                 <div class="card mb-3" style="max-width: 540px">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                        <i class="icofont-papers icofont"></i>
+                  <div class="row g-0 services">
+                    <div class="col-md-4 services">
+                      <i class="icofont-papers icofont"></i>
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="card-title">
+                        <h5 class="card-title service">
                           Resume Assesment & Interview Prep
                         </h5>
                         <p class="card-text service">
@@ -233,17 +339,13 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="single-schedule first">
                 <div class="card mb-3" style="max-width: 540px">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img
-                        src="img/owate_secondary_logo.png"
-                        class="img-fluid rounded-start"
-                        alt="owate_secondary_logo"
-                      />
+                  <div class="row g-0 services">
+                    <div class="col-md-4 services">
+                      <i class="icofont-briefcase icofont"></i>
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="card-title">
+                        <h5 class="card-title service">
                           Supplementary Skills <span></span>Training
                         </h5>
                         <p class="card-text service">
@@ -263,17 +365,18 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="single-schedule first">
                 <div class="card mb-3" style="max-width: 540px">
-                  <div class="row g-0">
-                    <div class="col-md-4">
+                  <div class="row g-0 services">
+                    <div class="col-md-4 services">
                       <img
-                        src="img/owate_secondary_logo.png"
+                        style="max-height: 150px;"
+                        src="img/businessman.png"
                         class="img-fluid rounded-start"
                         alt="owate_secondary_logo"
                       />
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="card-title">
+                        <h5 class="card-title service">
                           Career Exploration Advancement
                         </h5>
                         <p class="card-text service">
@@ -294,13 +397,13 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="single-schedule first">
                 <div class="card mb-3" style="max-width: 540px">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <i  class="icofont-mic icofont"></i>
+                  <div class="row g-0 services">
+                    <div class="col-md-4 services">
+                      <i class="icofont-microphone-alt icofont"></i>
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="card-title">
+                        <h5 class="card-title service">
                           Ask Me Anything <span></span>(AMA)
                         </h5>
                         <p class="card-text service">
@@ -320,17 +423,15 @@
             <div class="col-lg-6 col-md-6 col-12">
               <div class="single-schedule first">
                 <div class="card mb-3" style="max-width: 540px">
-                  <div class="row g-0">
-                    <div class="col-md-4">
-                      <img
-                        src="img/owate_secondary_logo.png"
-                        class="img-fluid rounded-start"
-                        alt="owate_secondary_logo"
-                      />
+                  <div class="row g-0 services">
+                    <div class="col-md-4 services">
+                      <svg >
+                        <image xlink:href="img/hcdpsvg.svg" />
+                      </svg>
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="card-title">
+                        <h5 class="card-title service">
                           Holistic Career Development Program
                         </h5>
                         <p class="card-text service">
@@ -368,139 +469,37 @@
       </div>
     </section>
     <!--/End Start schedule Area -->
-
-    <!-- Start Feautes -->
-    <section class="Feautes section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="section-title">
-              <h2>We Are Ready to Propel Your Career</h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 col-12">
-            <!-- Start Single features -->
-            <div class="single-features">
-              <div class="signle-icon">
-                <i class="icofont-search-job"></i>
-              </div>
-              <h3>Job Searching</h3>
-              <p>
-                Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-                vulputate.
-              </p>
-            </div>
-            <!-- End Single features -->
-          </div>
-          <div class="col-lg-4 col-12">
-            <!-- Start Single features -->
-            <div class="single-features">
-              <div class="signle-icon">
-                <i class="icofont-papers"></i>
-              </div>
-              <h3>Interview Prep.</h3>
-              <p>
-                Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-                vulputate.
-              </p>
-            </div>
-            <!-- End Single features -->
-          </div>
-          <div class="col-lg-4 col-12">
-            <!-- Start Single features -->
-            <div class="single-features last">
-              <div class="signle-icon">
-                <i class="icofont-chart-growth"></i>
-              </div>
-              <h3>Career Growth</h3>
-              <p>
-                Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam
-                vulputate.
-              </p>
-            </div>
-            <!-- End Single features -->
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--/ End Feautes -->
-
     
-
     <!-- Start Why choose -->
     <section class="why-choose section">
       <div class="container">
-        <div class="row">
           <div class="col-lg-12">
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-12">
-            <!-- Start Choose Left -->
-            <div class="choose-left">
-              <h3>Who We Are</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas pharetra antege vel est lobortis, a commodo magna
-                rhoncus. In quis nisi non emet quam pharetra commodo.
-              </p>
-              <p>
-                Class aptent taciti sociosqu ad litora torquent per conubia
-                nostra, per inceptos himenaeos.
-              </p>
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul class="list">
-                    <li>
-                      <i class="fa fa-caret-right"></i>Maecenas vitae luctus
-                      nibh.
-                    </li>
-                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                    <li>
-                      <i class="fa fa-caret-right"></i>Aliquam feugiat interdum.
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul class="list">
-                    <li>
-                      <i class="fa fa-caret-right"></i>Maecenas vitae luctus
-                      nibh.
-                    </li>
-                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                    <li>
-                      <i class="fa fa-caret-right"></i>Aliquam feugiat interdum.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- End Choose Left -->
-          </div>
-          <div class="col-lg-6 col-12">
-            <!-- Start Choose Rights -->
-            <div class="choose-right">
+            <div class="why-choose-video">
+              <img src="img/thumbnail.jpg" alt="" class="tinted-image">
               <div class="video-image">
                 <!-- Video Animation -->
                 <div class="promo-video">
                   <div class="waves-block">
                     <div class="waves wave-1"></div>
-                    <div class="waves wave-2"></div>
-                    <div class="waves wave-3"></div>
                   </div>
                 </div>
                 <!--/ End Video Animation -->
                 <a
-                  href="https://www.youtube.com/watch?v=RFVXy6CRVR4"
+                  href="https://www.youtube.com/watch?v=gQn96kSuzh8"
                   class="video video-popup mfp-iframe"
                   ><i class="fa fa-play"></i
                 ></a>
               </div>
             </div>
-            <!-- End Choose Rights -->
-          </div>
-        </div>
+<div class="why-choose-details row">
+  <div class="col-md-6">  <h4><strong> Want to learn how OWATE Consulting</strong> can work for your company?</h4>
+  </div>
+  <div class="col-md-6 text-right"> <button type="submit" class="btn btn-primary">
+      Book Consultation
+    </button>
+  </div>
+</div>
+
       </div>
     </section>
     <!--/ End Why choose -->
@@ -511,12 +510,7 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h2>We Are Always Ready to Help You. Book An Appointment</h2>
-              <img src="img/section-img.png" alt="#" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipiscing elit praesent
-                aliquet. pretiumts
-              </p>
+              <h2>Contact us</h2>
             </div>
           </div>
         </div>
@@ -542,34 +536,24 @@
                 <div class="col-lg-6 col-md-6 col-12">
                   <div class="form-group">
                     <div class="nice-select form-control wide" tabindex="0">
-                      <span class="current">Department</span>
+                      <span class="current">Free Introductory Session</span>
                       <ul class="list">
                         <li data-value="1" class="option selected">
-                          Department
+                          Free Introductory Session
                         </li>
-                        <li data-value="2" class="option">Cardiac Clinic</li>
-                        <li data-value="3" class="option">Neurology</li>
-                        <li data-value="4" class="option">Dentistry</li>
-                        <li data-value="5" class="option">Gastroenterology</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-12">
-                  <div class="form-group">
-                    <div class="nice-select form-control wide" tabindex="0">
-                      <span class="current">Doctor</span>
-                      <ul class="list">
-                        <li data-value="1" class="option selected">Doctor</li>
                         <li data-value="2" class="option">
-                          Dr. Akther Hossain
+                          AI Career Essentials
                         </li>
-                        <li data-value="3" class="option">Dr. Dery Alex</li>
-                        <li data-value="4" class="option">Dr. Jovis Karon</li>
+                        <li data-value="3" class="option">
+                          Resume Assessment</li>
+                        </li>
+                        <li data-value="4" class="option">Ask Me Anything (AMA)</li>
+                        <li data-value="5" class="option">ETC.</li>
                       </ul>
                     </div>
                   </div>
                 </div>
+                
                 <div class="col-lg-6 col-md-6 col-12">
                   <div class="form-group">
                     <input type="text" placeholder="Date" id="datepicker" />
@@ -589,20 +573,19 @@
                   <div class="form-group">
                     <div class="button">
                       <button type="submit" class="btn">
-                        Book An Appointment
+                        Send Email
                       </button>
                     </div>
                   </div>
                 </div>
                 <div class="col-lg-7 col-md-8 col-12">
-                  <p>( We will be confirm by an Text Message )</p>
                 </div>
               </div>
             </form>
           </div>
           <div class="col-lg-6 col-md-12">
             <div class="appointment-image">
-              <img src="img/contact-img.png" alt="#" />
+              <img src="img/owate_secondary_logo.png" alt="#" />
             </div>
           </div>
         </div>
