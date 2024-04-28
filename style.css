@@ -3378,7 +3378,7 @@ body {
   bottom: 0;
   height: 2px;
   width: 50px;
-  background: #1a76d1;
+  background: #bd1352;
 }
 .contact-us .contact-us-form p {
   font-size: 14px;
@@ -3429,7 +3429,6 @@ body {
   width: 100%;
 }
 .contact-us .form .btn:hover {
-  background: #1a76d1;
   color: #fff;
 }
 .contact-us .contact-us-form .checkbox {
@@ -3488,7 +3487,7 @@ body {
   margin-top: 50px;
 }
 .contact-us .single-info {
-  background: #1a76d1;
+  background-image: linear-gradient(to right, #bd1352, #6d2576);
   padding: 40px 60px;
   height: 150px;
   border-radius: 10px;
@@ -3509,7 +3508,6 @@ body {
   margin: 0 auto;
   width: 80%;
   height: 90%;
-  background: #1a76d1;
   opacity: 0;
   filter: blur(10px);
   -webkit-transition: all 0.3s ease-out 0s;
