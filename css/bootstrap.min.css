@@ -718,6 +718,7 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+  justify-content: center;
 }
 .row .services {
   padding: 10px;
@@ -4339,6 +4340,11 @@ tbody.collapse.show {
 
 .card-footer:last-child {
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
+  background-image: linear-gradient(to right, #bd1352, #6d2576);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card-header-tabs {
@@ -6081,7 +6087,7 @@ a.bg-dark:hover {
 }
 
 .border-success {
-  border-color: #28a745 !important;
+  border-color: #bd1352 !important;
 }
 
 .border-info {
