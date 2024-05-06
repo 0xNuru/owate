@@ -1,10 +1,3 @@
-/* =====================================
-Template Name: 	Mediplus.
-Author Name: Naimur Rahman
-Website: http://wpthemesgrid.com/
-Description: Mediplus - Doctor HTML Template.
-Version:	1.1
-========================================*/
 /*======================================
 [ CSS Table of contents ]
 * Global CSS
@@ -48,9 +41,10 @@ Version:	1.1
 /*=============================
 	Global CSS 
 ===============================*/
+@import url(https://db.onlinewebfonts.com/c/06cab1a0b0536008f269a1323d2598b6?family=Montserrat+SemiBold);
 body {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-family: "Montserrat SemiBold", sans-serif;
+  /* font-weight: 400; */
   font-size: 14px;
   color: #888;
 }
@@ -1100,6 +1094,7 @@ body {
   width: auto;
   margin: 0 15%;
 }
+
 .why-choose .why-choose-video {
   height: 100%;
   width: 100%;
@@ -2473,9 +2468,12 @@ body {
   font-size: 19px;
   margin-bottom: 45px;
 }
-.news-single .news-text li {
-  font-size: 15px;
+.news-single .news-text ul li {
+  font-size: 18px;
   list-style: disc;
+}
+.news-single .news-text ol li {
+  font-size: 18px;
 }
 
 /* Image Gallery */
@@ -4340,7 +4338,7 @@ body {
   position: relative;
 }
 .footer .footer-top {
-  padding: 100px 0px;
+  padding: 50px 0px;
   position: relative;
   background-image: linear-gradient(to right, #bd1352, #6d2576);
 }
@@ -4524,8 +4522,7 @@ body {
   color: #2c2d3f;
 }
 .footer .copyright {
-  background: #1a76d1;
-  padding: 25px 0px 25px 0px;
+  padding: 25px 0px 0px 0px;
   text-align: center;
 }
 .footer .copyright .copyright-content p {
