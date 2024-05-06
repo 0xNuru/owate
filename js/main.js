@@ -212,19 +212,19 @@ Version:	1.1
     /*===================
 			Accordion JS
 		=====================*/
-    $(".accordion > li:eq(0) a").addClass("active").next().slideDown();
-    $(".accordion a").on("click", function (j) {
-      var dropDown = $(this).closest("li").find("p");
-      $(this).closest(".accordion").find("p").not(dropDown).slideUp(300);
-      if ($(this).hasClass("active")) {
-        $(this).removeClass("active");
-      } else {
-        $(this).closest(".accordion").find("a.active").removeClass("active");
-        $(this).addClass("active");
-      }
-      dropDown.stop(false, true).slideToggle(300);
-      j.preventDefault();
-    });
+    // $(".accordion > li:eq(0) a").addClass("active").next().slideDown();
+    // $(".accordion a").on("click", function (j) {
+    //   var dropDown = $(this).closest("li").find("p");
+    //   $(this).closest(".accordion").find("p").not(dropDown).slideUp(300);
+    //   if ($(this).hasClass("active")) {
+    //     $(this).removeClass("active");
+    //   } else {
+    //     $(this).closest(".accordion").find("a.active").removeClass("active");
+    //     $(this).addClass("active");
+    //   }
+    //   dropDown.stop(false, true).slideToggle(300);
+    //   j.preventDefault();
+    // });
 
     /*====================================
 			Nice Select JS

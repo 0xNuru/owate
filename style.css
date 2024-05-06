@@ -1165,6 +1165,126 @@ body {
   align-items: center;
   padding-bottom: 10px;
 }
+.why-chooses .choose-left h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2c2d3f;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 24px;
+}
+.why-chooses .choose-left h3:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 50px;
+  background: #1a76d1;
+}
+.why-chooses .choose-left p {
+  margin-bottom: 35px;
+}
+.why-chooses .choose-left .list {
+}
+.why-chooses .choose-left .list li {
+  color: #868686;
+  margin-bottom: 12px;
+}
+.why-chooses .choose-left .list li:last-child {
+  margin-bottom: 0px;
+}
+.why-chooses .choose-left .list li i {
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  text-align: center;
+  background: #1a76d1;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 100%;
+  padding-left: 2px;
+  margin-right: 16px;
+}
+/* Start Faq CSS */
+.why-chooses {
+  background: #d9d9d9;
+  border-radius: 15px;
+  /* height: 100%; */
+  width: auto;
+  margin: 0;
+}
+
+.why-chooses .why-chooses-video {
+  height: 100%;
+  width: 100%;
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.why-chooses .why-chooses-video img {
+  border-radius: 45px;
+  padding: 30px;
+}
+
+.tinted-image {
+  filter: brightness(0.5); /* Adjust filter for desired tint effect */
+}
+
+.why-chooses .why-chooses-video .video {
+  color: #fff;
+  height: 70px;
+  width: 70px;
+  line-height: 70px;
+  text-align: center;
+  border-radius: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -35px;
+  margin-top: -35px;
+  font-size: 21px;
+  background: #bd1352;
+  padding-left: 4px;
+}
+.why-chooses .choose-right .video:hover {
+  transform: scale(1.1);
+}
+.why-chooses .video-image .waves-block .waves {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: #fff;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  border-radius: 100%;
+  -webkit-animation: waves 3s ease-in-out infinite;
+  animation: waves 3s ease-in-out infinite;
+  left: 50%;
+  margin-left: -100px;
+  top: 50%;
+  margin-top: -100px;
+}
+.why-chooses .video-image .waves-block .wave-1 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.why-chooses .video-image .waves-block .wave-2 {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.why-chooses .video-image .waves-block .wave-3 {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.why-chooses-details {
+  padding: 0 30px;
+  align-items: center;
+  padding-bottom: 10px;
+}
 /*=======================
 	End Why choose CSS
 =========================*/
@@ -3288,66 +3408,7 @@ body {
 .faq-wrap:last-child {
   margin-bottom: 30px;
 }
-.accordion {
-  padding-left: 0;
-  margin: 0;
-  padding: 0;
-}
-.accordion p {
-  font-size: 15px;
-  display: none;
-  padding: 20px 45px 15px 20px;
-  margin-bottom: 0;
-}
-.accordion a {
-  font-size: 16px;
-  width: 100%;
-  display: block;
-  cursor: pointer;
-  font-weight: 400;
-  padding: 15px 0 15px 18px;
-  border-radius: 0;
-  background: #fff;
-  color: #333;
-  border: 1px solid #eee;
-}
-.accordion a:hover {
-  color: #fff !important;
-  background: #1a76d1 !important;
-}
-.accordion a:after {
-  position: absolute;
-  right: 20px;
-  content: "+";
-  top: 16px;
-  color: #232323;
-  font-size: 25px;
-  font-weight: 700;
-}
-.accordion a:hover:after {
-  color: #fff !important;
-}
-.accordion li {
-  position: relative;
-  list-style-type: none;
-  margin-bottom: 30px;
-}
-.accordion li:first-child {
-  border-top: 0;
-}
-.accordion li:last-child {
-  margin-bottom: 0;
-}
-.accordion li a.active {
-  color: #ffffff;
-  background-color: #1a76d1;
-  border: 1px solid #1a76d1;
-}
-.accordion li a.active:after {
-  content: "-";
-  font-size: 25px;
-  color: #ffffff;
-}
+
 /*=====================
    End Faq CSS
 =======================*/
