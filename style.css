@@ -1133,6 +1133,11 @@ body {
 .why-choose .choose-right .video:hover {
   transform: scale(1.1);
 }
+.custom-iframe {
+  width: 100%; /* Sets the width of the iframe to 80% of its parent container */
+  height: 500px; /* Sets a fixed height, adjust as needed */
+  border-radius: 15px; /* Optional: removes the border */
+}
 .why-choose .video-image .waves-block .waves {
   position: absolute;
   width: 200px;
