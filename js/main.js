@@ -81,7 +81,8 @@ Version:	1.1
       loop: true,
       autoplay: true,
       smartSpeed: 500,
-      autoplayTimeout: 7000,
+      // slider time interval
+      autoplayTimeout: 5000,
       singleItem: true,
       autoplayHoverPause: true,
       items: 1,
