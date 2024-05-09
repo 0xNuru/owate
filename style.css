@@ -3654,10 +3654,12 @@ body {
 .about .about-text p {
   margin: 30px;
   font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 450;
   color: black;
 }
 .about .about-text ul {
+  font-family: Georgia, "Times New Roman", Times, serif;
   margin: 30px;
   font-size: 18px;
   font-weight: 450;
