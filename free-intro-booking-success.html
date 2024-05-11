@@ -121,8 +121,9 @@
             <div class="col-lg-8">
               <div class="contact-us-form">
                 <h2>Your consultation has been scheduled successfully!</h2>
-                <p>
-                  Please fill out the form below to help us prepare for your meeting better
+                <p style="margin-bottom: 10px;">
+                  Meeting details have been sent to your email address. <br />
+                  Please fill out the form below to help us prepare for your meeting better.
                 </p>
                 <!-- Form -->
                 <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST">
@@ -151,10 +152,10 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <input
-                          type="file"
-                          name="attachments"
-                          placeholder="resume"
-                          
+                          type="text"
+                          name="profession"
+                          placeholder="Profession"
+                          required
                         />
                       </div>
                     </div>
@@ -162,17 +163,29 @@
                       <div class="form-group">
                         <input
                           type="text"
-                          name="subject"
-                          placeholder="Subject"
-                          required=""
+                          name="Educational Background"
+                          placeholder="Profession"
+                          required
                         />
                       </div>
                     </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="resume">Resume</label>
+                        <input
+                          type="file"
+                          name="resume"
+                          placeholder="Resume"
+                          
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6"></div>
                     <div class="col-lg-12">
                       <div class="form-group">
                         <textarea
                           name="message"
-                          placeholder="Your Message"
+                          placeholder="Do you have any questions you would like me to answer? Please share them so that I can come prepared."
                           required=""
                         ></textarea>
                       </div>
