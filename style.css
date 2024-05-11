@@ -1104,7 +1104,9 @@ body {
   background-repeat: no-repeat;
   position: relative;
 }
-
+.accordion-body p {
+  /* font-family: "Montserrat"; */
+}
 .why-choose .why-choose-video img {
   border-radius: 45px;
   padding: 30px;
@@ -2592,6 +2594,7 @@ body {
 .news-single .news-text p {
   font-size: 19px;
   margin-bottom: 45px;
+  font-family: "Montserrat", "Times New Roman", Times, serif;
 }
 .news-single .news-text ul li {
   font-size: 18px;
@@ -3425,7 +3428,7 @@ body {
   box-shadow: 0px 0px 10px #00000024;
   border-radius: 5px;
   margin: 50px;
-    /* overflow: hidden; */
+  /* overflow: hidden; */
 }
 .contact-us .contact-us-left {
   width: 100%;
@@ -3653,12 +3656,12 @@ body {
 .about .about-text p {
   margin: 30px;
   font-size: 18px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Montserrat", "Times New Roman", Times, serif;
   font-weight: 450;
   color: black;
 }
 .about .about-text ul {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Montserrat", "Times New Roman", Times, serif;
   margin: 30px;
   font-size: 18px;
   font-weight: 450;
