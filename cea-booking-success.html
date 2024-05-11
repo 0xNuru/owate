@@ -143,7 +143,7 @@
                       <div class="form-group">
                         <input
                           type="email"
-                          name="email"
+                          name="email"  
                           placeholder="Email"
                           required
                         />
@@ -153,8 +153,18 @@
                       <div class="form-group">
                         <input
                           type="text"
-                          name="profession"
-                          placeholder="Profession"
+                          name="current industry"
+                          placeholder="Current Industry & Role"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="desired industry"
+                          placeholder="Industry & Role of interest"
                           required
                         />
                       </div>
@@ -164,22 +174,73 @@
                         <input
                           type="text"
                           name="LinkedIn profile"
-                          placeholder="LinkedIn profile URL"
-                        />
+                          placeholder="LinkedIn profile URL"    
+                        />  
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-6"></div>
+                    <div class="col-lg-12">
                       <div class="form-group">
                         <label for="resume">Resume</label>
                         <input
                           type="file"
                           name="resume"
                           placeholder="Resume"
-                          
                         />
                       </div>
                     </div>
-                    <div class="col-6"></div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <h6>What is your goal for this session?</h6>
+                        <ul>
+                            <li style="display: inline-flex; align-items: center;">
+                            <input style="width: auto;" type="radio" id="explore" name="goal" value="explore">
+                            <label for="explore">Explore options for an alternative or new career path</label>
+                            </li>
+                            <li style="display: inline-flex; align-items: center;">
+                            <input style="width: auto;" type="radio" id="grow" name="goal" value="grow">
+                            <label for="grow">Learn to attain growth within your current field</label>
+                            </li>
+                            <li style="display: inline-flex; align-items: center;">
+                            <input style="width: auto;" type="radio" id="both" name="goal" value="both">
+                            <label for="both">Both of the above</label>
+                            </li>
+                            <li style="display: inline-flex; align-items: center;">
+                            <input style="width: auto;" type="radio" id="other" name="goal" value="other">
+                            <label for="other">Other (please specify):</label>
+                            <input type="text" id="other_text" name="other_text">
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <h6>What stage are you in your career?</h6>
+                        <ul>
+                            <li style="display: inline-flex; align-items: center;">
+                            <input style="width: auto;" type="radio" id="stage_foundational" name="career_stage" value="foundational">
+                            <label for="stage_foundational">Forming new general understandings about the work world while developing new capacities, interests, and attitudes</label>
+                            </li>
+                            <li style="display: inline-flex; align-items: center;">
+                            <input style="width: auto;" type="radio" id="stage_exploration" name="career_stage" value="exploration">
+                            <label for="stage_exploration">Finding your place in the work world through classes, work experience and hobbies</label>
+                            </li>
+                            <li style="display: inline-flex; align-items: center;">
+                            <input style="width: auto;" type="radio" id="stage_stability" name="career_stage" value="stability">
+                            <label for="stage_stability">Attained career stability and possess entry-level skills in a chosen field with a stable work life</label>
+                            </li>
+                            <li style="display: inline-flex; align-items: center;">
+                            <input style="width: auto;" type="radio" id="stage_advancement" name="career_stage" value="advancement">
+                            <label for="stage_advancement">Striving to maintain what you have achieved while improving your position to advance</label>
+                            </li>
+                            <li style="display: inline-flex; align-items: center;">
+                            <input style="width: auto;" type="radio" id="stage_transition" name="career_stage" value="transition">
+                            <label for="stage_transition">Preparation for a career change, retirement, or another variation</label>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+
                     <div class="col-lg-12">
                       <div class="form-group">
                         <textarea

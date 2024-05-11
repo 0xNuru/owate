@@ -143,7 +143,7 @@
                       <div class="form-group">
                         <input
                           type="email"
-                          name="email"
+                          name="email"  
                           placeholder="Email"
                           required
                         />
@@ -153,7 +153,43 @@
                       <div class="form-group">
                         <input
                           type="text"
-                          name="profession"
+                          name="gender"  
+                          placeholder="Gender"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="contact"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input
+                          type="date"
+                          name="dob"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="LinkedIn profile"
+                          placeholder="LinkedIn profile URL"    
+                        />  
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="profession"  
                           placeholder="Profession"
                           required
                         />
@@ -163,28 +199,132 @@
                       <div class="form-group">
                         <input
                           type="text"
-                          name="LinkedIn profile"
-                          placeholder="LinkedIn profile URL"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="resume">Resume</label>
-                        <input
-                          type="file"
-                          name="resume"
-                          placeholder="Resume"
-                          
+                          name="employer"  
+                          placeholder="Employer"
+                          required
                         />
                       </div>
                     </div>
                     <div class="col-6"></div>
                     <div class="col-lg-12">
                       <div class="form-group">
+                        <label for="resume">Resume</label>
+                        <input
+                          type="file"
+                          name="resume"
+                          placeholder="Resume"
+                        />
+                      </div>
+                    </div>
+                   <div class="col-lg-12">
+                    <div class="form-group">
+                        <h6>Industry</h6>
+                        <select id="industry" name="industry" class="form-control" required>
+                            <option value="">--Please select an industry--</option>
+                            <option value="finance">Finance and insurance</option>
+                            <option value="public_admin">Public administration</option>
+                            <option value="education">Educational services</option>
+                            <option value="health_care">Health care and social assistance</option>
+                            <option value="administrative">Administrative and support</option>
+                            <option value="waste_management">Waste management and remediation services</option>
+                            <option value="transportation">Transportation and warehousing</option>
+                            <option value="arts">Arts, entertainment, and recreation</option>
+                            <option value="information">Information and cultural industries</option>
+                            <option value="accommodation">Accommodation and food services</option>
+                            <option value="real_estate">Real estate and rental and leasing</option>
+                            <option value="agriculture">Agriculture, forestry, fishing, and hunting</option>
+                            <option value="mining">Mining, quarrying, and oil and gas extraction</option>
+                            <option value="utilities">Utilities</option>
+                            <option value="construction">Construction</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="retail_wholesale">Retail/Wholesale trade</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="other_text" name="industry" style="margin-top: 10px; " class="form-control" placeholder="Please specify if other">
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <h6>What is your highest level of education completed?</h6>
+                        <select id="education_level" name="education_level" class="form-control" required>
+                            <option value="">--Please select an education level--</option>
+                            <option value="no_certificate">No certificate, diploma, or degree</option>
+                            <option value="high_school_diploma">High (secondary) school diploma or equivalency certificate</option>
+                            <option value="postsecondary_certificate">Postsecondary certificate, diploma, or degree</option>
+                            <option value="apprenticeship_certificate">Apprenticeship or trades certificate or diploma</option>
+                            <option value="non_apprenticeship_trades_certificate">Non-apprenticeship trades certificate or diploma</option>
+                            <option value="college_diploma">College, CEGEP or other non-university certificate or diploma</option>
+                            <option value="university_certificate_below_bachelor">University certificate or diploma below bachelor level</option>
+                            <option value="bachelors_degree">Bachelor’s degree</option>
+                            <option value="university_certificate_above_bachelor">University certificate or diploma above bachelor level</option>
+                            <option value="masters_degree">Master's degree</option>
+                            <option value="earned_doctorate">Earned doctorate</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="other_text" name="education_level" style="margin-top: 10px;" class="form-control" placeholder="Please specify if other">
+                    </div>
+                </div>
+
+                    <div class="col-lg-12">
+                    <div class="form-group">
+                        <h6>What stage are you in your career?</h6>
+                        <select id="career_stage" name="career_stage" class="form-control" required>
+                            <option value="">--Please select a career stage--</option>
+                            <option value="forming_understandings">Forming new general understandings about the work world while developing new capacities, interests, and attitudes</option>
+                            <option value="finding_place">Finding your place in the work world through classes, work experience, and hobbies</option>
+                            <option value="attained_stability">Attained career stability and possess entry-level skills in a chosen field with a stable work life</option>
+                            <option value="maintaining_achievements">Striving to maintain what you have achieved while improving your position to advance</option>
+                            <option value="preparing_change">Preparation for a career change, retirement, or another variation</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="goals">What are your top three goals for joining this Program?</label>
+                        <textarea
+                          name="goals"
+                          placeholder="..."
+                          required
+                          ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="challenges">Do you currently face any barriers to career development? What do you do to address these barriers?</label>
+                        <textarea
+                          name="challenges"
+                          placeholder="..."
+                          required
+                          ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="mission">What would you like to get out of our time together? What does success from our work together look like to you?</label>
+                        <textarea
+                          name="mission"
+                          placeholder="..."
+                          required
+                          ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="learning_style">What is your preferred learning style, feedback style, and communication style?</label>
+                        <textarea
+                          name="learning_style"
+                          placeholder="..."
+                          required
+                          ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="message">Do you have any questions you would like me to answer? Please share them so that I can come prepared.</label>
                         <textarea
                           name="message"
-                          placeholder="Do you have any questions you would like me to answer? Please share them so that I can come prepared."
+                          placeholder="..."
                           required=""
                         ></textarea>
                       </div>
