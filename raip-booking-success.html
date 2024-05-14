@@ -77,7 +77,7 @@
                         <a href="about.html">About</a>
                       </li>
                       <li>
-                        <a href="index.html#services">Services </a>
+                        <a href="services.html">Services </a>
                       </li>
                       <li>
                         <a href="faqs.html">FAQs</a>
@@ -126,11 +126,11 @@
                   Please fill out the form below to help us prepare for your meeting better.
                 </p>
                 <!-- Form -->
-                <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST">
+                <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST" enctype="multipart/form-data">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <input type="hidden" name="_next" value="https://owateconsulting.com/booking-success.html">
+                        <input type="hidden" name="_next" value="https://owateconsulting.com/form-success.html">
                         <input
                           type="text"
                           name="name"
@@ -153,8 +153,9 @@
                       <div class="form-group">
                         <input
                           type="text"
-                          name="profession"
-                          placeholder="Profession"
+                          name="profession/educational Background"
+                          placeholder="Profession/Educational Background
+"
                           required
                         />
                       </div>
@@ -163,14 +164,36 @@
                       <div class="form-group">
                         <input
                           type="text"
-                          name="LinkedIn profile"
-                          placeholder="LinkedIn profile URL"    
+                          name="industry"
+                          placeholder="Industry"    
                         />  
                       </div>
                     </div>
+                    <div class="col-lg-12">
+                    <div class="form-group">
+                        <p>What Session are you booking today?</p>
+                        <select id="session" name="session" class="form-control" required>
+                            <option value="">--Please select a session--</option>
+                            <option value="resume assessment">Resume assessment</option>
+                            <option value="interview prep">Interview preparation</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="form-group">
+                        <p>Please select and upload any documents that could help me better prepare for this session </p>
+                        <select id="document/link" name="document/link" class="form-control" required>
+                            <option value="">--Please select an option--</option>
+                            <option value="resume">Resume/CV</option>
+                            <option value="job posting">Job Posting</option>
+                            <option value="linkedin url">LinkedIn URL</option>
+                            <option value="company profile">Company Profile</option>
+                        </select>
+                    </div>
+                </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="resume">Resume</label>
+                        <p>Resume</p>
                         <input
                           type="file"
                           name="resume"
@@ -178,13 +201,42 @@
                         />
                       </div>
                     </div>
-                    <div class="col-6"></div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <p>Job Posting</p>
+                        <input
+                          type="file"
+                          name="jog posting"
+                          placeholder="job posting"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <p>LinkedIn</p>
+                        <input
+                          type="text"
+                          name="linkedin"
+                          placeholder="LinkedIn URL"    
+                        />  
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <p>Other</p>
+                        <input
+                          type="text"
+                          name="other"
+                          placeholder="Other"    
+                        />  
+                      </div>
+                    </div>
                     <div class="col-lg-12">
                       <div class="form-group">
+                        <p>Do you have any questions you would like me to answer or extra information you would like to provide? </p>
                         <textarea
                           name="message"
-                          placeholder="Do you have any questions you would like me to answer? Please share them so that I can come prepared."
-                          required=""
+                          placeholder="Tell us here..."
                         ></textarea>
                       </div>
                     </div>
@@ -286,7 +338,7 @@
                         >
                       </li>
                       <li>
-                        <a href="index.html#services"
+                        <a href="services.html"
                           ><i class="fa fa-caret-right" aria-hidden="true"></i
                           >Services</a
                         >

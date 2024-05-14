@@ -77,7 +77,7 @@
                         <a href="about.html">About</a>
                       </li>
                       <li>
-                        <a href="index.html#services">Services </a>
+                        <a href="services.html">Services </a>
                       </li>
                       <li>
                         <a href="faqs.html">FAQs</a>
@@ -126,11 +126,11 @@
                   Please fill out the form below to help us prepare for your meeting better.
                 </p>
                 <!-- Form -->
-                <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST">
+                <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST" enctype="multipart/form-data">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <input type="hidden" name="_next" value="https://owateconsulting.com/booking-success.html">
+                        <input type="hidden" name="_next" value="https://owateconsulting.com/form-success.html">
                         <input
                           type="text"
                           name="name"
@@ -163,52 +163,34 @@
                       <div class="form-group">
                         <input
                           type="text"
-                          name="contact"
-                          placeholder="Phone Number"
+                          name="LinkedIn profile"
+                          placeholder="LinkedIn profile URL"    
+                        />  
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <input
+                          type="text"
+                          name="occupation"  
+                          placeholder="Occupation (please provide the title and description)"
+                          required
                         />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
+                        <p>DOB</p>
                         <input
                           type="date"
                           name="dob"
                         />
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="LinkedIn profile"
-                          placeholder="LinkedIn profile URL"    
-                        />  
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="profession"  
-                          placeholder="Profession"
-                          required
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="employer"  
-                          placeholder="Employer"
-                          required
-                        />
-                      </div>
-                    </div>
                     <div class="col-6"></div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label for="resume">Resume</label>
+                        <p for="resume">Resume</p>
                         <input
                           type="file"
                           name="resume"
@@ -218,7 +200,7 @@
                     </div>
                    <div class="col-lg-12">
                     <div class="form-group">
-                        <h6>Industry</h6>
+                        <p>Industry</p>
                         <select id="industry" name="industry" class="form-control" required>
                             <option value="">--Please select an industry--</option>
                             <option value="finance">Finance and insurance</option>
@@ -245,7 +227,7 @@
                 </div>
                 <div class="col-lg-12">
                     <div class="form-group">
-                        <h6>What is your highest level of education completed?</h6>
+                        <p>What is your highest level of education completed?</p>
                         <select id="education_level" name="education_level" class="form-control" required>
                             <option value="">--Please select an education level--</option>
                             <option value="no_certificate">No certificate, diploma, or degree</option>
@@ -265,9 +247,9 @@
                     </div>
                 </div>
 
-                    <div class="col-lg-12">
+                    <div class="col-12">
                     <div class="form-group">
-                        <h6>What stage are you in your career?</h6>
+                        <p>What stage are you in your career?</p>
                         <select id="career_stage" name="career_stage" class="form-control" required>
                             <option value="">--Please select a career stage--</option>
                             <option value="forming_understandings">Forming new general understandings about the work world while developing new capacities, interests, and attitudes</option>
@@ -280,40 +262,40 @@
                 </div>
                 <div class="col-lg-12">
                       <div class="form-group">
-                        <label for="goals">What are your top three goals for joining this Program?</label>
+                        <p for="goals">What are your top three goals for joining this Program?</p>
                         <textarea
                           name="goals"
-                          placeholder="..."
+                          placeholder="Tell us here..."
                           required
                           ></textarea>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label for="challenges">Do you currently face any barriers to career development? What do you do to address these barriers?</label>
+                        <p for="challenges">Do you currently face any barriers to career development? What do you do to address these barriers?</p>
                         <textarea
                           name="challenges"
-                          placeholder="..."
+                          placeholder="Tell us here..."
                           required
                           ></textarea>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label for="mission">What would you like to get out of our time together? What does success from our work together look like to you?</label>
+                        <p for="mission">What would you like to get out of our time together? What does success from our work together look like to you?</p>
                         <textarea
                           name="mission"
-                          placeholder="..."
+                          placeholder="Tell us here..."
                           required
                           ></textarea>
                       </div>
                     </div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label for="learning_style">What is your preferred learning style, feedback style, and communication style?</label>
+                        <p for="learning_style">What is your preferred learning style, feedback style, and communication style?</p>
                         <textarea
                           name="learning_style"
-                          placeholder="..."
+                          placeholder="Tell us here..."
                           required
                           ></textarea>
                       </div>
@@ -321,11 +303,10 @@
 
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label for="message">Do you have any questions you would like me to answer? Please share them so that I can come prepared.</label>
+                        <p for="message">Do you have any questions you would like me to answer? Please share them so that I can come prepared.</p>
                         <textarea
                           name="message"
-                          placeholder="..."
-                          required=""
+                          placeholder="Tell us here..."
                         ></textarea>
                       </div>
                     </div>
@@ -427,7 +408,7 @@
                         >
                       </li>
                       <li>
-                        <a href="index.html#services"
+                        <a href="services.html"
                           ><i class="fa fa-caret-right" aria-hidden="true"></i
                           >Services</a
                         >

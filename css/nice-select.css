@@ -24,7 +24,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  white-space: nowrap;
+  white-space: normal;
   width: auto;
   margin-bottom: 16px;
 }
@@ -150,8 +150,11 @@
 
 .nice-select .option {
   cursor: pointer;
-  font-weight: 400;
-  line-height: 40px;
+  font-family: "poppins", Courier, monospace !important;
+  max-width: 100%;
+  white-space: normal;
+  border: #bd1352 0.5px solid;
+  line-height: 30px;
   list-style: none;
   min-height: 40px;
   outline: none;
@@ -165,10 +168,6 @@
 .nice-select .option:hover {
   background-color: #bd1352;
   color: #fff;
-}
-
-.nice-select .option.selected {
-  font-weight: bold;
 }
 
 .nice-select .option.disabled {

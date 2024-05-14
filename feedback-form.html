@@ -77,7 +77,7 @@
                         <a href="about.html">About</a>
                       </li>
                       <li>
-                        <a href="index.html#services">Services </a>
+                        <a href="services.html">Services </a>
                       </li>
                       <li>
                         <a href="faqs.html">FAQs</a>
@@ -125,19 +125,8 @@
                   Please fill out the form below to help us serve you better.
                 </p>
                 <!-- Form -->
-                <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST">
+                <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST" enctype="multipart/form-data">
                   <div class="row">
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input type="hidden" name="_next" value="https://owateconsulting.com/booking-success.html">
-                        <input
-                          type="text"
-                          name="name"
-                          placeholder="Name"
-                          required
-                        />
-                      </div>
-                    </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <input
@@ -148,9 +137,24 @@
                         />
                       </div>
                     </div>
+                    <div class="col-6"></div>
                     <div class="col-lg-12">
                     <div class="form-group">
-                        <h6>How did you find OWATE Consulting?</h6>
+                        <p>What session did you book?</p>
+                        <select id="session" name="session" class="form-control" required>
+                            <option value="">--Please select an option--</option>
+                            <option value="RAIP">Resume Assessment & Interview Preparation</option>
+                            <option value="AMA">Ask Me Anything</option>
+                            <option value="SST">Supplementary Skills Training</option>
+                            <option value="CEA">Career Exploration & Advancemen</option>
+                            <option value="HCDP">Holistic Career Development Program</option>
+                        </select>
+                    </div>
+                </div>
+                     <div class="col-6"></div>
+                    <div class="col-lg-12">
+                    <div class="form-group">
+                        <p>How did you find OWATE Consulting?</p>
                         <select id="discovery_source" name="discovery_source" class="form-control" required>
                             <option value="">--Please select an option--</option>
                             <option value="linkedin">LinkedIn</option>
@@ -164,29 +168,70 @@
                         <input type="text" id="other_text" name="discovery_source_other" style="margin-top: 10px;" class="form-control" placeholder="Please specify if other">
                     </div>
                 </div>
-                <div class="col-lg-12">
-                <div class="form-group">
-                    <h6>How did we perform?</h6>`
-                    <select id="discovery_source" name="discovery_source" class="form-control" required>
-                        <option value="">--Please select an option--</option>
-                        <option value="excellent">5 - Excellent</option>
-                        <option value="very_good">4 - Very Good</option>
-                        <option value="satisfactory">3 - Satisfactory</option>
-                        <option value="fair">2 - Fair</option>
-                        <option value="poor">1 - Poor</option>
-                </div>
-            </div>
-
-                    <div class="col-6"></div>
-                    <div class="col-lg-12">
+                
+              <div class="col-lg-12">
                       <div class="form-group">
+                        <p> Did you learn anything new from this session today?</p>
                         <textarea
                           name="message"
-                          placeholder="Final thoughts."
-                          required=""
+                          placeholder="Tell us here..."
+                          required
                         ></textarea>
                       </div>
                     </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <p> Is there anything else you wish we could have explored?</p>
+                        <textarea
+                          name="message"
+                          placeholder="Tell us here..."
+                          required
+                        ></textarea>
+                      </div>
+                    </div>
+                    
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <p> What were the negative aspects of this session, if any?</p>
+                        <textarea
+                          name="message"
+                          placeholder="Tell us here..."
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <p> What were the positive aspects of this session, if any?</p>
+                        <textarea
+                          name="message"
+                          placeholder="Tell us here..."
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <p> Feel free to provide a detailed review</p>
+                        <textarea
+                          name="message"
+                          placeholder="Tell us here..."
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <p> Any other comments or questions? </p>
+                        <textarea
+                          name="message"
+                          placeholder="Tell us here..."
+                        ></textarea>
+                      </div>
+                    </div>
+
+                    <div class="col-6"></div>
                     <div class="col-6">
                       <div class="form-group login-btn">
                         <button class="btn" type="submit">Send</button>
@@ -285,7 +330,7 @@
                         >
                       </li>
                       <li>
-                        <a href="index.html#services"
+                        <a href="services.html"
                           ><i class="fa fa-caret-right" aria-hidden="true"></i
                           >Services</a
                         >
