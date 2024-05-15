@@ -131,43 +131,64 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <input type="hidden" name="_next" value="https://owateconsulting.com/form-success.html">
+                        <label for="name">Name</label>
                         <input
                           type="text"
                           name="name"
-                          placeholder="Name"
+                          placeholder=""
                           required
                         />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
+                        <label for="email">Email</label>
                         <input
                           type="email"
                           name="email"
-                          placeholder="Email"
+                          placeholder=""
                           required
                         />
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                       <div class="form-group">
+                        <label for="profession/educational background">Job Title/ Educational Background</label>
                         <input
                           type="text"
-                          name="profession/educational Background"
-                          placeholder="Profession/Educational Background"
+                          name="Job Title/ Educational Background"
+                          placeholder=""
                           required
                         />
                       </div>
                     </div>
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="industry"
-                          placeholder="Industry"
-                        />
-                      </div>
+                    <div class="col-lg-12">
+                    <div class="form-group">
+                        <p>Industry</p>
+                        <select id="industry" name="industry" class="form-control" required>
+                            <option value="">--Please select an industry--</option>
+                            <option value="finance">Finance and insurance</option>
+                            <option value="public_admin">Public administration</option>
+                            <option value="education">Educational services</option>
+                            <option value="health_care">Health care and social assistance</option>
+                            <option value="administrative">Administrative and support</option>
+                            <option value="waste_management">Waste management and remediation services</option>
+                            <option value="transportation">Transportation and warehousing</option>
+                            <option value="arts">Arts, entertainment, and recreation</option>
+                            <option value="information">Information and cultural industries</option>
+                            <option value="accommodation">Accommodation and food services</option>
+                            <option value="real_estate">Real estate and rental and leasing</option>
+                            <option value="agriculture">Agriculture, forestry, fishing, and hunting</option>
+                            <option value="mining">Mining, quarrying, and oil and gas extraction</option>
+                            <option value="utilities">Utilities</option>
+                            <option value="construction">Construction</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="retail_wholesale">Retail/Wholesale trade</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="other_text" name="industry" style="margin-top: 10px; " class="form-control" placeholder="Please specify if other">
                     </div>
+                </div>
                     <div class="col-6"></div>
                     <div class="col-lg-12">
                       <div class="form-group">

@@ -126,122 +126,188 @@
                   Please fill out the form below to help us prepare for your meeting better.
                 </p>
                 <!-- Form -->
-                <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST" enctype="multipart/form-data">
+                <form class="form" action="https://formsubmit.co/nurudeenmyself@gmail.com" method="POST" enctype="multipart/form-data">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
                         <input type="hidden" name="_next" value="https://owateconsulting.com/form-success.html">
+                        <label for="name">Name</label>
                         <input
                           type="text"
                           name="name"
-                          placeholder="Name"
+                          placeholder=""
                           required
                         />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
+                        <label for="email">Email</label>
                         <input
                           type="email"
                           name="email"
-                          placeholder="Email"
+                          placeholder=""
                           required
                         />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
+                        <label for="gender">Gender</label>
                         <input
                           type="text"
-                          name="profession/educational Background"
-                          placeholder="Profession/Educational Background"
+                          name="gender"  
+                          placeholder=""
                           required
                         />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
+                        <label for="LinkedIn profile">LinkedIn Profile URL</label>
                         <input
                           type="text"
-                          name="industry"
-                          placeholder="Industry"
+                          name="LinkedIn profile"
+                          placeholder=""    
+                        />  
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label for="occupation">Occupation</label>
+                        <input
+                          type="text"
+                          name="occupation"  
+                          placeholder="please provide the title and description"
                           required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <p>DOB</p>
+                        <input
+                          type="date"
+                          name="dob"
                         />
                       </div>
                     </div>
                     <div class="col-6"></div>
                     <div class="col-lg-12">
-                    <div class="form-group">
-                        <p>What Session are you booking today?</p>
-                        <select id="session" name="session" class="form-control" required>
-                            <option value="">--Please select an option--</option>
-                            <option value="personal branding">Personal Branding</option>
-                            <option value="job searching">Job Posting</option>
-                            <option value="linkedin url">Cover Letter Writing</option>
-                            <option value="company profile">Career Stability</option>
-                            <option value="other">Other (specify below)</option>
-                        </select>
+                      <div class="form-group">
+                        <p for="resume">Resume</p>
                         <input
-                          type="text"
-                          name="other session"
-                          placeholder="Other (specify here)"
+                          type="file"
+                          name="resume"
+                          placeholder="Resume"
                         />
-                        
+                      </div>
+                    </div>
+                   <div class="col-lg-12">
+                      <label for="industry">Industry</label>
+                    <div class="form-group">
+                        <select id="industry" name="industry" class="form-control" required>
+                            <option value="">--Please select an industry--</option>
+                            <option value="Finance and insurance">Finance and insurance</option>
+                            <option value="Public administration">Public administration</option>
+                            <option value="Educational services">Educational services</option>
+                            <option value="Health care and social assistance">Health care and social assistance</option>
+                            <option value="Administrative and support">Administrative and support</option>
+                            <option value="Waste management and remediation services">Waste management and remediation services</option>
+                            <option value="Transportation and warehousing">Transportation and warehousing</option>
+                            <option value="rts, entertainment, and recreation">Arts, entertainment, and recreation</option>
+                            <option value="Information and cultural industries">Information and cultural industries</option>
+                            <option value="Accommodation and food services">Accommodation and food services</option>
+                            <option value="Real estate and rental and leasing">Real estate and rental and leasing</option>
+                            <option value="Agriculture, forestry, fishing, and hunting">Agriculture, forestry, fishing, and hunting</option>
+                            <option value="Mining, quarrying, and oil and gas extraction">Mining, quarrying, and oil and gas extraction</option>
+                            <option value="Utilities">Utilities</option>
+                            <option value="Construction">Construction</option>
+                            <option value="Manufacturing">Manufacturing</option>
+                            <option value="Retail/Wholesale trade">Retail/Wholesale trade</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="other_industry" name="industry" style="margin-top: 10px; " class="form-control" placeholder="Please specify if other">
                     </div>
                 </div>
                 <div class="col-lg-12">
+                      <label for="education">What is your highest level of education completed?</label>
                     <div class="form-group">
-                        <p>Please select and upload any documents that could help me better prepare for this session </p>
-                        <select id="document/link" name="document/link" class="form-control" required>
-                            <option value="">--Please select an option--</option>
-                            <option value="job posting">Job Posting</option>
-                            <option value="linkedin url">LinkedIn URL</option>
-                            <option value="cover letter">Sample cover letter</option>
-                            <option value="other">Other </option>
-
+                        <select id="education" name="education" class="form-control" required>
+                            <option value="">--Please select an education level--</option>
+                            <option value="No certificate, diploma, or degree">No certificate, diploma, or degree</option>
+                            <option value="High (secondary) school diploma or equivalency certificate">High (secondary) school diploma or equivalency certificate</option>
+                            <option value="Postsecondary certificate, diploma, or degree">Postsecondary certificate, diploma, or degree</option>
+                            <option value="Apprenticeship or trades certificate or diploma">Apprenticeship or trades certificate or diploma</option>
+                            <option value="Non-apprenticeship trades certificate or diploma">Non-apprenticeship trades certificate or diploma</option>
+                            <option value="College, CEGEP or other non-university certificate or diplom">College, CEGEP or other non-university certificate or diplom</option>
+                            <option value="University certificate or diploma below bachelor level">University certificate or diploma below bachelor level</option>
+                            <option value="Bachelor’s degree">Bachelor’s degree</option>
+                            <option value="University certificate or diploma above bachelor level">University certificate or diploma above bachelor level</option>
+                            <option value="Master's degree">Master's degree</option>
+                            <option value="Earned doctorate">Earned doctorate</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="other_education" name="industry" style="margin-top: 10px; " class="form-control" placeholder="Please specify if other">
+                    </div>
+                </div>
+                    <div class="col-12">
+                    <div class="form-group">
+                        <p>What stage are you in your career?</p>
+                        <select id="career_stage" name="career_stage" class="form-control" required>
+                            <option value="">--Please select a career stage--</option>
+                            <option value="forming_understandings">Forming new general understandings about the work world while developing new capacities, interests, and attitudes</option>
+                            <option value="finding_place">Finding your place in the work world through classes, work experience, and hobbies</option>
+                            <option value="attained_stability">Attained career stability and possess entry-level skills in a chosen field with a stable work life</option>
+                            <option value="maintaining_achievements">Striving to maintain what you have achieved while improving your position to advance</option>
+                            <option value="preparing_change">Preparation for a career change, retirement, or another variation</option>
                         </select>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                       <div class="form-group">
-                        <p>Cover letter</p>
-                        <input
-                          type="file"
-                          name="cover letter"
-                        />
+                        <p for="goals">What are your top three goals for joining this Program?</p>
+                        <textarea
+                          name="goals"
+                          placeholder="Tell us here..."
+                          required
+                          ></textarea>
                       </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <p>Job Posting</p>
-                        <input
-                          type="file"
-                          name="job posting"
-                        />
+                        <p for="challenges">Do you currently face any barriers to career development? What do you do to address these barriers?</p>
+                        <textarea
+                          name="challenges"
+                          placeholder="Tell us here..."
+                          required
+                          ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <p for="mission">What would you like to get out of our time together? What does success from our work together look like to you?</p>
+                        <textarea
+                          name="mission"
+                          placeholder="Tell us here..."
+                          required
+                          ></textarea>
+                      </div>
+                    </div>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <p for="learning_style">What is your preferred learning style, feedback style, and communication style?</p>
+                        <textarea
+                          name="learning_style"
+                          placeholder="Tell us here..."
+                          required
+                          ></textarea>
                       </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-12">
                       <div class="form-group">
-                        <input
-                          type="text"
-                          name="LinkedIn"
-                          placeholder="LinkedIn URL"
-                        />
-                      </div>
-                    </div>
-                    
-                      <div class="col-lg-6">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          name="other doc"
-                          placeholder="other doc"
-                        />
-                      </div>
-                    </div>                    <div class="col-lg-12">
-                      <div class="form-group">
-                        <p>Do you have any questions you would like me to answer? Please share them so that I can come prepared</p>
+                        <p for="message">Do you have any questions you would like me to answer? Please share them so that I can come prepared.</p>
                         <textarea
                           name="message"
                           placeholder="Tell us here..."

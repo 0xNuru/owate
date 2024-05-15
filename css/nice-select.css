@@ -9,9 +9,9 @@
   display: block;
   float: left;
   font-family: inherit;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: normal;
-  height: 42px;
+  height: fit-content;
   line-height: 27px;
   outline: none;
   padding-left: 18px;

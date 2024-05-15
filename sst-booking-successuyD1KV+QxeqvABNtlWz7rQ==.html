@@ -131,29 +131,141 @@
                     <div class="col-lg-6">
                       <div class="form-group">
                         <input type="hidden" name="_next" value="https://owateconsulting.com/form-success.html">
+                        <label for="name">Name</label>
                         <input
                           type="text"
                           name="name"
-                          placeholder="Name"
+                          placeholder=""
                           required
                         />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
+                        <label for="input">Email</label>
                         <input
                           type="email"
-                          name="email"
-                          placeholder="Email"
+                          name="email"  
+                          placeholder=""
                           required
                         />
                       </div>
                     </div>
-                    
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label for="Job Title/ Educational Background">Job Title / Educational Background</label>
+                        <input
+                          type="text"
+                          name="Job Title/ Educational Background"
+                          placeholder=""
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="col-6"></div>
+                    <div class="col-lg-12">
+                      <label>Industry</label>
+                    <div class="form-group">
+                        <select id="industry" name="industry" class="form-control" required>
+                            <option value="">--Please select an industry--</option>
+                            <option value="finance">Finance and insurance</option>
+                            <option value="public_admin">Public administration</option>
+                            <option value="education">Educational services</option>
+                            <option value="health_care">Health care and social assistance</option>
+                            <option value="administrative">Administrative and support</option>
+                            <option value="waste_management">Waste management and remediation services</option>
+                            <option value="transportation">Transportation and warehousing</option>
+                            <option value="arts">Arts, entertainment, and recreation</option>
+                            <option value="information">Information and cultural industries</option>
+                            <option value="accommodation">Accommodation and food services</option>
+                            <option value="real_estate">Real estate and rental and leasing</option>
+                            <option value="agriculture">Agriculture, forestry, fishing, and hunting</option>
+                            <option value="mining">Mining, quarrying, and oil and gas extraction</option>
+                            <option value="utilities">Utilities</option>
+                            <option value="construction">Construction</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="retail_wholesale">Retail/Wholesale trade</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="other_text" name="industry" style="margin-top: 10px; " class="form-control" placeholder="Please specify if other">
+                    </div>
+                </div>
+                    <div class="col-lg-12">
+                       <label>What Session are you booking today?</label>
+                    <div class="form-group">
+                        <select id="session" name="session" class="form-control" required>
+                            <option value="">--Please select a session--</option>
+                            <option value="resume assessment">Resume assessment</option>
+                            <option value="interview prep">Interview preparation</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                      <label>Please select and upload any documents that could help me better prepare for this session </l>
+                    <div class="form-group">
+                        <select id="document/link" name="document/link" class="form-control" required>
+                            <option value="">--Please select an option--</option>
+                            <option value="resume">Resume/CV</option>
+                            <option value="job posting">Job Posting</option>
+                            <option value="linkedin url">LinkedIn URL</option>
+                            <option value="company profile">Company Profile</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Resume</label>
+                        <input
+                          type="file"
+                          name="resume"
+                          placeholder="Resume"
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Job Posting</label>
+                        <input
+                          type="text"
+                          name="job posting"
+                          placeholder=""
+                        />
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>LinkedIn</label>
+                        <input
+                          type="text"
+                          name="linkedin"
+                          placeholder=""    
+                        />  
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Company Profile</label>
+                        <input
+                          type="text"
+                          name="company profile"
+                          placeholder=""    
+                        />  
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group">
+                        <label>Other</label>
+                        <input
+                          type="text"
+                          name="other"
+                          placeholder=""    
+                        />  
+                      </div>
+                    </div>
                     <div class="col-6"></div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <p>Do you have any questions you would like me to answer or extra information you would like to provide? Please share them so that I can come prepared. </p>
+                        <label>Do you have any questions you would like me to answer or extra information you would like to provide? </label>
                         <textarea
                           name="message"
                           placeholder="Tell us here..."

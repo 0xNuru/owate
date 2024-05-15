@@ -2316,6 +2316,9 @@ body {
   margin-top: 30px;
   background: transparent;
 }
+.main-sidebar a {
+  color: black;
+}
 .main-sidebar .single-widget {
   margin-bottom: 30px;
   padding: 40px;
@@ -2591,17 +2594,25 @@ body {
 .news-single .news-content p:last-child {
   margin: 0;
 }
+/* span.current {
+  white-space: nowrap;
+} */
 .news-single .news-text p {
-  font-size: 19px;
+  font-size: 17px;
   margin-bottom: 45px;
-  font-family: "Montserrat", "Times New Roman", Times, serif;
+  font-family: "Poppins", "Times New Roman", Times, serif;
 }
 .news-single .news-text ul li {
-  font-size: 18px;
+  font-size: 16px;
   list-style: disc;
+  font-family: "Poppins", "Times New Roman", Times, serif;
+  color: #000;
 }
 .news-single .news-text ol li {
-  font-size: 18px;
+  font-size: 17px;
+  list-style: disc;
+  font-family: "Poppins", "Times New Roman", Times, serif;
+  color: #000;
 }
 
 /* Image Gallery */
@@ -3474,7 +3485,6 @@ body {
   width: 100%;
   height: 50px;
   border: 1px solid #eee;
-  text-transform: capitalize;
   padding: 0px 18px;
   color: #555;
   font-size: 14px;
@@ -3656,15 +3666,22 @@ body {
 .about .about-text p {
   margin: 30px;
   font-size: 18px;
-  font-family: "Montserrat", "Times New Roman", Times, serif;
   font-weight: 450;
+  font-family: "Georgia", "Times New Roman";
   color: black;
 }
 .about .about-text ul {
-  font-family: "Montserrat", "Times New Roman", Times, serif;
   margin: 30px;
   font-size: 18px;
   font-weight: 450;
+  font-family: "Georgia", "Times New Roman";
+  color: black;
+}
+.about .about-text ul li {
+  margin: 30px;
+  font-size: 18px;
+  font-weight: 450;
+  font-family: "Georgia", "Times New Roman";
   color: black;
 }
 .about .about-left {
