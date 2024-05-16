@@ -130,6 +130,7 @@
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
+                        <input type="hidden" name="session" value="Free Introductory Session">
                         <input type="hidden" name="_next" value="https://owateconsulting.com/form-success.html">
                         <label for="name">Name</label>
                         <input
@@ -187,10 +188,27 @@
                             <option value="Retail/Wholesale trade">Retail/Wholesale trade</option>
                             <option value="other">Other</option>
                         </select>
-                        <input type="text" id="other_industry" name="industry" style="margin-top: 10px; " class="form-control" placeholder="Please specify if other">
+                        <input type="text" id="other_industry" name="other_industry" style="margin-top: 10px; " class="form-control" placeholder="Please specify if other">
                     </div>
                 </div>
                     <div class="col-6"></div>
+
+                    <div class="col-lg-12">
+                    <div class="form-group">
+                        <p>How did you find OWATE Consulting?</p>
+                        <select id="discovery_source" name="discovery_source" class="form-control" required>
+                            <option value="">--Please select an option--</option>
+                            <option value="linkedin">LinkedIn</option>
+                            <option value="website">Website</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="ad">Ad</option>
+                            <option value="directory_site">Directory Site</option>
+                            <option value="personal_referral">Personal Referral</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <input type="text" id="other_text" name="discovery_source_other" style="margin-top: 10px;" class="form-control" placeholder="Please specify if other">
+                    </div>
+                </div>
                     <div class="col-lg-12">
                       <div class="form-group">
                         <p >Do you have any questions you would like me to answer? Please share them so that I can come prepared.</p>
