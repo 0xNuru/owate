@@ -71,17 +71,27 @@
             <div class="col-lg-8">
               <div class="contact-us-form">
                 <h2>Your consultation has been scheduled successfully!</h2>
-                <p style="margin-bottom: 10px;">
+                <p style="margin-bottom: 10px">
                   Meeting details have been sent to your email address. <br />
-                  Please fill out the form below to help us prepare for your meeting better.
+                  Please fill out the form below to help us prepare for your
+                  meeting better.
                 </p>
                 <!-- Form -->
-                <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST" enctype="multipart/form-data">
+                <form
+                  class="form"
+                  action="https://formsubmit.co/contact@owateconsulting.com"
+                  method="POST"
+                  enctype="multipart/form-data"
+                >
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <input type="hidden" name="_next" value="https://owateconsulting.com/form-success.html">
-                          <input type="hidden" name="session" value="CEA">
+                        <input
+                          type="hidden"
+                          name="_next"
+                          value="https://owateconsulting.com/form-success.html"
+                        />
+                        <input type="hidden" name="session" value="CEA" />
                         <label for="name">Name</label>
                         <input
                           type="text"
@@ -96,7 +106,7 @@
                         <label for="email">Email</label>
                         <input
                           type="email"
-                          name="email"  
+                          name="email"
                           placeholder=""
                           required
                         />
@@ -104,18 +114,22 @@
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="Job Title/ Educational Background">Educational Background</label>
+                        <label for="Job Title/ Educational Background"
+                          >Educational Background</label
+                        >
                         <input
                           type="text"
                           name="Job Title/ Educational Background"
-                          placeholder=""    
+                          placeholder=""
                           required
-                        />  
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="current industry">Current Industry & Job Title</label>
+                        <label for="current industry"
+                          >Current Industry & Job Title</label
+                        >
                         <input
                           type="text"
                           name="current industry"
@@ -126,76 +140,151 @@
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="Industry & Role of interest">Industry & Job of interest</label>
-                        <input
-                          type="text"
-                          name=""
-                          placeholder=""
-                          required
-                        />
+                        <label for="Industry & Role of interest"
+                          >Industry & Job of interest</label
+                        >
+                        <input type="text" name="" placeholder="" required />
                       </div>
                     </div>
                     <div class="col-6"></div>
 
                     <div class="col-12">
-                        <label for="career_stage">What is your goal for this session?</label>
-                    <div class="form-group">
-                        <select id="goal" name="goal" class="form-control" required>
-                            <option value="none">--Please select your goal--</option>
-                            <option value="Explore options for an alternative or new career path">Explore options for an alternative or new career path</option>
-                            <option value="Learn to attain growth within your current field">Learn to attain growth within your current field</option>
-                            <option value="Learn to attain growth within your current field & Explore options for an alternative or new career path">Both</option>
-                            <option value="other">Other</option>
+                      <label for="career_stage"
+                        >What is your goal for this session?</label
+                      >
+                      <div class="form-group">
+                        <select
+                          id="goal"
+                          name="goal"
+                          class="form-control"
+                          required
+                        >
+                          <option value="none">
+                            --Please select your goal--
+                          </option>
+                          <option
+                            value="Explore options for an alternative or new career path"
+                          >
+                            Explore options for an alternative or new career
+                            path
+                          </option>
+                          <option
+                            value="Learn to attain growth within your current field"
+                          >
+                            Learn to attain growth within your current field
+                          </option>
+                          <option
+                            value="Learn to attain growth within your current field & Explore options for an alternative or new career path"
+                          >
+                            Both
+                          </option>
+                          <option value="other">Other</option>
                         </select>
                         <input
                           type="text"
                           name="other goal"
                           placeholder="other goals..."
                         />
+                      </div>
                     </div>
-                </div>
-                    
-                    <div class="col-12">
-                        <label for="career_stage">What stage are you in your career?</label>
-                    <div class="form-group">
-                        <select id="career_stage" name="career_stage" class="form-control" required>
-                            <option value="none">--Please select a career stage--</option>
-                            <option value="Forming new general understandings about the work world while developing new capacities, interests, and attitudes">Forming new general understandings about the work world while developing new capacities, interests, and attitudes</option>
-                            <option value="Finding your place in the work world through classes, work experience, and hobbies">Finding your place in the work world through classes, work experience, and hobbies</option>
-                            <option value="Attained career stability and possess entry-level skills in a chosen field with a stable work life">Attained career stability and possess entry-level skills in a chosen field with a stable work life</option>
-                            <option value="Striving to maintain what you have achieved while improving your position to advance">Striving to maintain what you have achieved while improving your position to advance</option>
-                            <option value="Preparation for a career change, retirement, or another variation">Preparation for a career change, retirement, or another variation</option>
-                        </select>
-                    </div>
-                </div>
 
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <p>How did you find OWATE Consulting?</p>
-                        <select id="discovery_source" name="discovery_source" class="form-control" required>
-                            <option value="none">--Please select an option--</option>
-                            <option value="linkedin">LinkedIn</option>
-                            <option value="website">Website</option>
-                            <option value="instagram">Instagram</option>
-                            <option value="ad">Ad</option>
-                            <option value="directory_site">Directory Site</option>
-                            <option value="personal_referral">Personal Referral</option>
-                            <option value="other">Other</option>
+                    <div class="col-12">
+                      <label for="career_stage"
+                        >What stage are you in your career?</label
+                      >
+                      <div class="form-group">
+                        <select
+                          id="career_stage"
+                          name="career_stage"
+                          class="form-control"
+                          required
+                        >
+                          <option value="none">
+                            --Please select a career stage--
+                          </option>
+                          <option
+                            value="Forming new general understandings about the work world while developing new capacities, interests, and attitudes"
+                          >
+                            Forming new general understandings about the work
+                            world while developing new capacities, interests,
+                            and attitudes
+                          </option>
+                          <option
+                            value="Finding your place in the work world through classes, work experience, and hobbies"
+                          >
+                            Finding your place in the work world through
+                            classes, work experience, and hobbies
+                          </option>
+                          <option
+                            value="Attained career stability and possess entry-level skills in a chosen field with a stable work life"
+                          >
+                            Attained career stability and possess entry-level
+                            skills in a chosen field with a stable work life
+                          </option>
+                          <option
+                            value="Striving to maintain what you have achieved while improving your position to advance"
+                          >
+                            Striving to maintain what you have achieved while
+                            improving your position to advance
+                          </option>
+                          <option
+                            value="Preparation for a career change, retirement, or another variation"
+                          >
+                            Preparation for a career change, retirement, or
+                            another variation
+                          </option>
                         </select>
-                        <input type="text" id="other_text" name="discovery_source_other" style="margin-top: 10px;" class="form-control" placeholder="Please specify if other">
+                      </div>
                     </div>
-                </div>
+
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <p>How did you find OWATE Consulting?</p>
+                        <select
+                          id="discovery_source"
+                          name="discovery_source"
+                          class="form-control"
+                          required
+                        >
+                          <option value="none">
+                            --Please select an option--
+                          </option>
+                          <option value="linkedin">LinkedIn</option>
+                          <option value="website">Website</option>
+                          <option value="instagram">Instagram</option>
+                          <option value="ad">Ad</option>
+                          <option value="directory_site">Directory Site</option>
+                          <option value="personal_referral">
+                            Personal Referral
+                          </option>
+                          <option value="other">Other</option>
+                        </select>
+                        <input
+                          type="text"
+                          id="other_text"
+                          name="discovery_source_other"
+                          style="margin-top: 10px"
+                          class="form-control"
+                          placeholder="Please specify if other"
+                        />
+                      </div>
+                    </div>
 
                     <div class="col-lg-12">
                       <div class="col-lg-12">
-                      <div class="form-group">
-                        <p>Do you have any questions you would like me to answer or extra information you would like to provide? Please share them so that I can come prepared. </p>
-                        <textarea
-                          name="message"
-                          placeholder="Tell us here..."
-                        ></textarea>
+                        <div class="form-group">
+                          <p>
+                            Do you have any questions you would like me to
+                            answer or extra information you would like to
+                            provide? Please share them so that I can come
+                            prepared.
+                          </p>
+                          <textarea
+                            name="message"
+                            placeholder="Tell us here..."
+                          ></textarea>
+                        </div>
                       </div>
-                    </div>
                     </div>
                     <div class="col-6">
                       <div class="form-group login-btn">
@@ -204,7 +293,7 @@
                     </div>
                   </div>
                 </form>
-                
+
                 <!--/ End Form -->
               </div>
             </div>
