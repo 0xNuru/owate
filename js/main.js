@@ -44,6 +44,30 @@ Version:	1.1
     });
 
     /*====================================
+			Navbar and Footer JS
+		======================================*/
+
+    function loadNavbarAndFooter() {
+      // Fetch and insert the Navbar
+      fetch("/navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          $("#navbar").html(data);
+          initializeNavbarToggler();
+        })
+        .catch((error) => console.error("Error loading the navbar:", error));
+
+      // Fetch and insert the Footer
+      fetch("/footer.html") // Ensure 'footer.html' is the path to your footer file
+        .then((response) => response.text())
+        .then((data) => {
+          $("#footer").html(data); // Ensure your HTML has a placeholder with id="footer"
+        })
+        .catch((error) => console.error("Error loading the footer:", error));
+    }
+
+    // Call the function to load the Navbar and Footer
+    loadNavbarAndFooter(); /*====================================
 			Sticky Header JS
 		======================================*/
     jQuery(window).on("scroll", function () {

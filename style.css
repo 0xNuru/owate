@@ -2504,7 +2504,6 @@ body {
 }
 /* News Single */
 .news-single {
-  padding: 60px 0 90px;
   background: #f8f8f8;
 }
 .news-single .single-main {
@@ -2525,6 +2524,14 @@ body {
 .news-single .news-title {
   font-size: 25px;
   margin: 20px 0;
+}
+.news-single .news-title p {
+  font-family: "Poppins", "Times New Roman", Times, serif;
+  font-size: 15px;
+  margin: 10px 0;
+  font-style: italic;
+  font-weight: 300;
+  padding-right: 100px;
 }
 .news-single .news-title a {
   color: #252525;
@@ -2597,10 +2604,33 @@ body {
 /* span.current {
   white-space: nowrap;
 } */
+.news-text {
+  padding: 0px 30px;
+}
 .news-single .news-text p {
   font-size: 17px;
-  margin-bottom: 45px;
+  margin-bottom: 15px;
   font-family: "Poppins", "Times New Roman", Times, serif;
+}
+.news-single .news-text .news-section {
+  border-top: 0.5px solid black;
+  padding: 35px 0px;
+}
+.news-single .news-text .news-cta p {
+  border-top: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+  font-style: italic;
+  font-size: small;
+  color: #bd1352;
+  padding: 7px 0px;
+}
+.news-single .news-text .news-cta p span {
+  color: blue;
+  text-decoration: underline;
+}
+.news-single .news-text ul {
+  padding-left: 25px;
+  margin-left: 0px;
 }
 .news-single .news-text ul li {
   font-size: 16px;
@@ -2608,11 +2638,37 @@ body {
   font-family: "Poppins", "Times New Roman", Times, serif;
   color: #000;
 }
-.news-single .news-text ol li {
-  font-size: 17px;
+
+.TOC {
+  margin: 40px 0px;
+}
+
+.news-single .news-text .TOC ul li {
+  font-size: 16px;
   list-style: disc;
   font-family: "Poppins", "Times New Roman", Times, serif;
+  color: black;
+}
+.news-single .news-text .TOC ul li:hover {
+  color: #bd1352;
+}
+
+.news-single .news-text ol li {
+  font-size: 16px;
+  font-family: "Poppins", "Times New Roman", Times, serif;
   color: #000;
+}
+
+.news-single .news-text h4 {
+  margin: 10px 0px;
+}
+
+.news-single .news-text h6 {
+  margin: 5px 0px;
+}
+
+.news-single .news-text ul li h5 {
+  margin: 10px 0px;
 }
 
 /* Image Gallery */
