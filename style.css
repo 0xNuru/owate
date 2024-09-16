@@ -2624,10 +2624,11 @@ body {
   color: #bd1352;
   padding: 7px 0px;
 }
-.news-single .news-text .news-cta p span {
-  color: blue;
-  text-decoration: underline;
+
+.news-single .news-text .news-cta strong {
+  font-weight: 600;
 }
+
 .news-single .news-text ul {
   padding-left: 25px;
   margin-left: 0px;
@@ -2651,6 +2652,14 @@ body {
 }
 .news-single .news-text .TOC ul li:hover {
   color: #bd1352;
+}
+
+.article-link strong:hover {
+  color: blue !important;
+}
+
+.article-link strong {
+  color: #bd1352 !important;
 }
 
 .news-single .news-text ol li {
