@@ -43,33 +43,41 @@ Version:	1.1
       }
     });
 
-    /*====================================
-			Navbar and Footer JS
-		======================================*/
-
     function loadNavbarAndFooter() {
       // Fetch and insert the Navbar
       fetch("/navbar.html")
         .then((response) => response.text())
         .then((data) => {
           $("#navbar").html(data);
-          initializeNavbarToggler();
+          initializeNavbarToggler(); // Initialize toggler after navbar is loaded
         })
         .catch((error) => console.error("Error loading the navbar:", error));
 
       // Fetch and insert the Footer
-      fetch("/footer.html") // Ensure 'footer.html' is the path to your footer file
+      fetch("/footer.html")
         .then((response) => response.text())
         .then((data) => {
-          $("#footer").html(data); // Ensure your HTML has a placeholder with id="footer"
+          $("#footer").html(data);
         })
         .catch((error) => console.error("Error loading the footer:", error));
     }
 
+    // Initialize navbar toggler function
+    function initializeNavbarToggler() {
+      // Initialize slicknav for mobile menu after navbar is loaded
+      $(".menu").slicknav({
+        prependTo: ".mobile-nav",
+        duration: 300,
+        closeOnClick: true,
+      });
+    }
+
     // Call the function to load the Navbar and Footer
-    loadNavbarAndFooter(); /*====================================
-			Sticky Header JS
-		======================================*/
+    loadNavbarAndFooter();
+
+    /*====================================
+      Sticky Header JS
+======================================*/
     jQuery(window).on("scroll", function () {
       if ($(this).scrollTop() > 100) {
         $(".header").addClass("sticky");
@@ -83,19 +91,10 @@ Version:	1.1
     });
 
     /*====================================
-			Search JS
-		======================================*/
+      Search JS
+======================================*/
     $(".search a").on("click", function () {
       $(".search-top").toggleClass("active");
-    });
-
-    /*====================================
-			Mobile Menu
-		======================================*/
-    $(".menu").slicknav({
-      prependTo: ".mobile-nav",
-      duration: 300,
-      closeOnClick: true,
     });
 
     /*===============================
