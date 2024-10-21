@@ -50,13 +50,13 @@
   </head>
   <body>
     <!-- Header Area -->
-        <div id="navbar"></div>
+    <div id="navbar"></div>
     <!-- End Header Area -->
 
     <!-- Start Contact Us -->
     <section class="contact-us section">
       <div class="container">
-        <div class="inner" style="margin: 50px 0px;">
+        <div class="inner" style="margin: 50px 0px">
           <div class="row">
             <div class="col-lg-4">
               <div class="contact-us-left">
@@ -71,17 +71,27 @@
             <div class="col-lg-8">
               <div class="contact-us-form">
                 <h2>Your consultation has been scheduled successfully!</h2>
-                <p style="margin-bottom: 10px;">
+                <p style="margin-bottom: 10px">
                   Meeting details have been sent to your email address. <br />
-                  Please fill out the form below to help us prepare for your meeting better.
+                  Please fill out the form below to help us prepare for your
+                  meeting better.
                 </p>
                 <!-- Form -->
-                <form class="form" action="https://formsubmit.co/contact@owateconsulting.com" method="POST" enctype="multipart/form-data">
+                <form
+                  class="form"
+                  action="https://formsubmit.co/contact@owateconsulting.com"
+                  method="POST"
+                  enctype="multipart/form-data"
+                >
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <input type="hidden" name="session_name" value="RAIP">
-                        <input type="hidden" name="_next" value="https://owateconsulting.com/form-success.html">
+                        <input type="hidden" name="session_name" value="RAIP" />
+                        <input
+                          type="hidden"
+                          name="_next"
+                          value="https://owateconsulting.com/form-success.html"
+                        />
                         <label for="name">Name</label>
                         <input
                           type="text"
@@ -96,7 +106,7 @@
                         <label for="input">Email</label>
                         <input
                           type="email"
-                          name="email"  
+                          name="email"
                           placeholder=""
                           required
                         />
@@ -104,7 +114,9 @@
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <label for="Job Title/ Educational Background">Job Title / Educational Background</label>
+                        <label for="Job Title/ Educational Background"
+                          >Job Title / Educational Background</label
+                        >
                         <input
                           type="text"
                           name="Job Title/ Educational Background"
@@ -116,82 +128,145 @@
                     <div class="col-6"></div>
                     <div class="col-lg-12">
                       <label for="industry">Industry</label>
-                    <div class="form-group">
-                        <select id="industry" name="industry" class="form-control" required>
-                            <option value="none">--Please select an industry--</option>
-                            <option value="Finance and insurance">Finance and insurance</option>
-                            <option value="Public administration">Public administration</option>
-                            <option value="Educational services">Educational services</option>
-                            <option value="Health care and social assistance">Health care and social assistance</option>
-                            <option value="Administrative and support">Administrative and support</option>
-                            <option value="Waste management and remediation services">Waste management and remediation services</option>
-                            <option value="Transportation and warehousing">Transportation and warehousing</option>
-                            <option value="rts, entertainment, and recreation">Arts, entertainment, and recreation</option>
-                            <option value="Science, Technology, Engineering and Mathematics">Science, Technology, Engineering and Mathematics</option>
-                            <option value="Information and cultural industries">Information and cultural industries</option>
-                            <option value="Accommodation and food services">Accommodation and food services</option>
-                            <option value="Real estate and rental and leasing">Real estate and rental and leasing</option>
-                            <option value="Agriculture, forestry, fishing, and hunting">Agriculture, forestry, fishing, and hunting</option>
-                            <option value="Mining, quarrying, and oil and gas extraction">Mining, quarrying, and oil and gas extraction</option>
-                            <option value="Utilities">Utilities</option>
-                            <option value="Construction">Construction</option>
-                            <option value="Manufacturing">Manufacturing</option>
-                            <option value="Retail/Wholesale trade">Retail/Wholesale trade</option>
-                            <option value="other">Other</option>
+                      <div class="form-group">
+                        <select
+                          id="industry"
+                          name="industry"
+                          class="form-control"
+                          required
+                        >
+                          <option value="none">
+                            --Please select an industry--
+                          </option>
+                          <option value="Finance and insurance">
+                            Finance and insurance
+                          </option>
+                          <option value="Public administration">
+                            Public administration
+                          </option>
+                          <option value="Educational services">
+                            Educational services
+                          </option>
+                          <option value="Health care and social assistance">
+                            Health care and social assistance
+                          </option>
+                          <option value="Administrative and support">
+                            Administrative and support
+                          </option>
+                          <option
+                            value="Waste management and remediation services"
+                          >
+                            Waste management and remediation services
+                          </option>
+                          <option value="Transportation and warehousing">
+                            Transportation and warehousing
+                          </option>
+                          <option value="rts, entertainment, and recreation">
+                            Arts, entertainment, and recreation
+                          </option>
+                          <option
+                            value="Science, Technology, Engineering and Mathematics"
+                          >
+                            Science, Technology, Engineering and Mathematics
+                          </option>
+                          <option value="Information and cultural industries">
+                            Information and cultural industries
+                          </option>
+                          <option value="Accommodation and food services">
+                            Accommodation and food services
+                          </option>
+                          <option value="Real estate and rental and leasing">
+                            Real estate and rental and leasing
+                          </option>
+                          <option
+                            value="Agriculture, forestry, fishing, and hunting"
+                          >
+                            Agriculture, forestry, fishing, and hunting
+                          </option>
+                          <option
+                            value="Mining, quarrying, and oil and gas extraction"
+                          >
+                            Mining, quarrying, and oil and gas extraction
+                          </option>
+                          <option value="Utilities">Utilities</option>
+                          <option value="Construction">Construction</option>
+                          <option value="Manufacturing">Manufacturing</option>
+                          <option value="Retail/Wholesale trade">
+                            Retail/Wholesale trade
+                          </option>
+                          <option value="other">Other</option>
                         </select>
-                        <input type="text" id="other_industry" name="other_industry" style="margin-top: 10px; " class="form-control" placeholder="Please specify if other">
+                        <input
+                          type="text"
+                          id="other_industry"
+                          name="other_industry"
+                          style="margin-top: 10px"
+                          class="form-control"
+                          placeholder="Please specify if other"
+                        />
+                      </div>
                     </div>
-                </div>
                     <div class="col-lg-12">
                       <label>What Session are you booking today?</label>
-                    <div class="form-group">
-                        <select id="session" name="session" class="form-control" required>
-                            <option value="none">--Please select a session--</option>
-                            <option value="resume assessment">Resume assessment</option>
-                            <option value="interview prep">Interview preparation</option>
+                      <div class="form-group">
+                        <select
+                          id="session"
+                          name="session"
+                          class="form-control"
+                          required
+                        >
+                          <option value="none">
+                            --Please select a session--
+                          </option>
+                          <option value="resume assessment">
+                            Resume assessment
+                          </option>
+                          <option value="interview prep">
+                            Interview preparation
+                          </option>
                         </select>
+                      </div>
                     </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="form-group">
-                        <label>Please select and upload any documents that could help me better prepare for this session </label>
-                        <select id="document/link" name="document/link" class="form-control" required>
-                            <option value="none">--Please select an option--</option>
-                            <option value="resume">Resume/CV</option>
-                            <option value="job posting">Job Posting</option>
-                            <option value="linkedin url">LinkedIn URL</option>
-                            <option value="company profile">Company Profile</option>
+                    <div class="col-lg-12">
+                      <div class="form-group">
+                        <label
+                          >Please select and upload any documents that could
+                          help me better prepare for this session
+                        </label>
+                        <select
+                          id="document/link"
+                          name="document/link"
+                          class="form-control"
+                          required
+                        >
+                          <option value="none">
+                            --Please select an option--
+                          </option>
+                          <option value="resume">Resume/CV</option>
+                          <option value="job posting">Job Posting</option>
+                          <option value="linkedin url">LinkedIn URL</option>
+                          <option value="company profile">
+                            Company Profile
+                          </option>
                         </select>
+                      </div>
                     </div>
-                </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label>Resume</label>
-                        <input
-                          type="file"
-                          name="resume"
-                          placeholder="Resume"
-                        />
+                        <input type="file" name="resume" placeholder="Resume" />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label>Job Posting Link</label>
-                        <input
-                          type="text"
-                          name="job posting"
-                          placeholder=""
-                        />
+                        <input type="text" name="job posting" placeholder="" />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label>LinkedIn Link</label>
-                        <input
-                          type="text"
-                          name="linkedin"
-                          placeholder=""    
-                        />  
+                        <input type="text" name="linkedin" placeholder="" />
                       </div>
                     </div>
                     <div class="col-lg-6">
@@ -200,40 +275,55 @@
                         <input
                           type="text"
                           name="company profile"
-                          placeholder=""    
-                        />  
+                          placeholder=""
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6">
                       <div class="form-group">
                         <label>Other</label>
-                        <input
-                          type="text"
-                          name="other"
-                          placeholder=""    
-                        />  
+                        <input type="text" name="other" placeholder="" />
                       </div>
                     </div>
                     <div class="col-6"></div>
                     <div class="col-lg-12">
-                    <div class="form-group">
+                      <div class="form-group">
                         <p>How did you find OWATE Consulting?</p>
-                        <select id="discovery_source" name="discovery_source" class="form-control" required>
-                            <option value="none">--Please select an option--</option>
-                            <option value="linkedin">LinkedIn</option>
-                            <option value="website">Website</option>
-                            <option value="instagram">Instagram</option>
-                            <option value="ad">Ad</option>
-                            <option value="directory_site">Directory Site</option>
-                            <option value="personal_referral">Personal Referral</option>
-                            <option value="other">Other</option>
+                        <select
+                          id="discovery_source"
+                          name="discovery_source"
+                          class="form-control"
+                          required
+                        >
+                          <option value="none">
+                            --Please select an option--
+                          </option>
+                          <option value="linkedin">LinkedIn</option>
+                          <option value="website">Website</option>
+                          <option value="instagram">Instagram</option>
+                          <option value="ad">Ad</option>
+                          <option value="directory_site">Directory Site</option>
+                          <option value="personal_referral">
+                            Personal Referral
+                          </option>
+                          <option value="other">Other</option>
                         </select>
-                        <input type="text" id="other_text" name="discovery_source_other" style="margin-top: 10px;" class="form-control" placeholder="Please specify if other">
+                        <input
+                          type="text"
+                          id="other_text"
+                          name="discovery_source_other"
+                          style="margin-top: 10px"
+                          class="form-control"
+                          placeholder="Please specify if other"
+                        />
+                      </div>
                     </div>
-                </div>
                     <div class="col-lg-12">
                       <div class="form-group">
-                        <label>Do you have any questions you would like me to answer or extra information you would like to provide? </label>
+                        <label
+                          >Do you have any questions you would like me to answer
+                          or extra information you would like to provide?
+                        </label>
                         <textarea
                           name="message"
                           placeholder="Tell us here..."
@@ -247,7 +337,7 @@
                     </div>
                   </div>
                 </form>
-                
+
                 <!--/ End Form -->
               </div>
             </div>

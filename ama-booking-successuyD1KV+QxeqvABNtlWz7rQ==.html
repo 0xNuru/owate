@@ -77,20 +77,14 @@
                   meeting better.
                 </p>
                 <!-- Form -->
-                <form
-                  class="form"
-                  action="https://formsubmit.co/contact@owateconsulting.com"
-                  method="POST"
-                  enctype="multipart/form-data"
-                >
+                <form class="form" id="ama-form">
                   <div class="row">
                     <div class="col-lg-6">
                       <div class="form-group">
-                        <input type="hidden" name="session" value="AMA" />
                         <input
                           type="hidden"
-                          name="_next"
-                          value="https://owateconsulting.com/form-success.html"
+                          name="form"
+                          value="AMA booking form"
                         />
                         <label for="name">Name</label>
                         <input
@@ -123,7 +117,7 @@
                           class="form-control"
                           required
                         >
-                          <option value="none">
+                          <option value="other">
                             --Please select an option--
                           </option>
                           <option value="linkedin">LinkedIn</option>
@@ -139,7 +133,7 @@
                         <input
                           type="text"
                           id="other_text"
-                          name="discovery_source_other"
+                          name="other_discovery_source"
                           style="margin-top: 10px"
                           class="form-control"
                           placeholder="Please specify if other"
@@ -166,7 +160,6 @@
                     </div>
                   </div>
                 </form>
-
                 <!--/ End Form -->
               </div>
             </div>
