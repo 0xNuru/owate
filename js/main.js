@@ -102,35 +102,35 @@ Version:	1.1
     }
     attachFormSubmit(
       "ama-form",
-      "https://owate-backend.onrender.com//mail/submit"
+      "https://owate-backend.onrender.com/mail/submit"
     );
     attachFormSubmit(
       "cea-form",
-      "https://owate-backend.onrender.com//mail/submit"
+      "https://owate-backend.onrender.com/mail/submit"
     );
     attachFormSubmit(
       "feedback-form",
-      "https://owate-backend.onrender.com//mail/submit"
+      "https://owate-backend.onrender.com/mail/submit"
     );
     attachFormSubmit(
       "free-intro-form",
-      "https://owate-backend.onrender.com//mail/submit"
+      "https://owate-backend.onrender.com/mail/submit"
     );
     attachFormSubmit(
       "contact-form",
-      "https://owate-backend.onrender.com//mail/submit"
+      "https://owate-backend.onrender.com/mail/submit"
     );
     attachFormSubmit(
       "hcdp-form",
-      "https://owate-backend.onrender.com//mail/submit"
+      "https://owate-backend.onrender.com/mail/submit"
     );
     attachFormSubmit(
       "raip-form",
-      "https://owate-backend.onrender.com//mail/submit"
+      "https://owate-backend.onrender.com/mail/submit"
     );
     attachFormSubmit(
       "sst-form",
-      "https://owate-backend.onrender.com//mail/submit"
+      "https://owate-backend.onrender.com/mail/submit"
     );
 
     /*====================================
