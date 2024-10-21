@@ -43,6 +43,100 @@ Version:	1.1
       }
     });
 
+    /*====================================
+      Form Submit
+    ======================================*/
+    function collectFormData(form) {
+      const formData = {};
+      const formElements = form.elements;
+      const excludedTypes = ["submit", "button"];
+
+      for (let element of formElements) {
+        // Check if element's type is not in the excluded types list
+        if (
+          element.name &&
+          !excludedTypes.includes(element.type) &&
+          element.value !== ""
+        ) {
+          formData[element.name] = element.value;
+        }
+      }
+
+      return formData;
+    }
+    async function handleSubmit(event, url) {
+      event.preventDefault();
+
+      const form = event.target;
+      const formData = collectFormData(form);
+
+      try {
+        const response = await fetch(url, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          console.log("Mail sent successfully!");
+          window.location.href =
+            "https://owateconsulting.com/form-success.html";
+        } else {
+          alert("Error sending mail.");
+        }
+      } catch (error) {
+        alert("Error sending mail: " + error);
+      }
+    }
+    function attachFormSubmit(formId, url) {
+      const form = document.getElementById(formId);
+      if (form) {
+        form.addEventListener("submit", function (event) {
+          handleSubmit(event, url);
+        });
+      } else {
+        console.log(`Form with ID '${formId}' not found.`);
+      }
+    }
+    attachFormSubmit(
+      "ama-form",
+      "https://owate-backend.onrender.com//mail/submit"
+    );
+    attachFormSubmit(
+      "cea-form",
+      "https://owate-backend.onrender.com//mail/submit"
+    );
+    attachFormSubmit(
+      "feedback-form",
+      "https://owate-backend.onrender.com//mail/submit"
+    );
+    attachFormSubmit(
+      "free-intro-form",
+      "https://owate-backend.onrender.com//mail/submit"
+    );
+    attachFormSubmit(
+      "contact-form",
+      "https://owate-backend.onrender.com//mail/submit"
+    );
+    attachFormSubmit(
+      "hcdp-form",
+      "https://owate-backend.onrender.com//mail/submit"
+    );
+    attachFormSubmit(
+      "raip-form",
+      "https://owate-backend.onrender.com//mail/submit"
+    );
+    attachFormSubmit(
+      "sst-form",
+      "https://owate-backend.onrender.com//mail/submit"
+    );
+
+    /*====================================
+      End Form Submit
+    ======================================*/
+
     function loadNavbarAndFooter() {
       // Fetch and insert the Navbar
       fetch("/navbar.html")
