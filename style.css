@@ -460,6 +460,18 @@ body {
   height: auto;
   margin-top: 40px;
 }
+
+.get-quote.carousel-btn {
+  display: none;
+}
+
+/* Show the element on mobile view (max-width 768px as an example) */
+@media (max-width: 768px) {
+  .get-quote.carousel-btn {
+    display: flex;
+    justify-content: center;
+  }
+}
 .header .search-top.active .search-form {
   opacity: 1;
   visibility: visible;
