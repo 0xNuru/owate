@@ -153,25 +153,18 @@
                             p(cal, ar);
                           };
                       })(window, "https://app.cal.com/embed/embed.js", "init");
-                      Cal("init", "ask-me-anything-ama", {
-                        origin: "https://cal.com",
-                        credentials: "include",
-                      });
+                      Cal("init", { origin: "https://cal.com" });
 
-                      Cal.ns["ask-me-anything-ama"]("inline", {
+                      Cal("inline", {
                         elementOrSelector: "#my-cal-inline",
-                        config: {
-                          layout: "month_view",
-                          credentials: "include",
-                        },
-                        calLink: "owate-consulting/ask-me-anything-ama",
+                        calLink:
+                          "owate-consulting/resume-assessment-interview-preparation",
+                        layout: "month_view",
                       });
 
-                      Cal.ns["ask-me-anything-ama"]("ui", {
-                        cssVarsPerTheme: {
-                          light: { "cal-brand": "#bd1352" },
-                          dark: { "cal-brand": "#fafafa" },
-                        },
+                      Cal("ui", {
+                        theme: "light",
+                        styles: { branding: { brandColor: "#bd1352" } },
                         hideEventTypeDetails: false,
                         layout: "month_view",
                       });
