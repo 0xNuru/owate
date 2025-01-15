@@ -4702,3 +4702,28 @@ body {
 /*=========================
 	End Footer CSS
 ===========================*/
+
+.btn-booking {
+  padding: 15px 30px;
+  background: #bd1352;
+  color: #fff;
+  border-radius: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-booking:hover {
+  background: #a01145;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(189, 19, 82, 0.2);
+}
+
+.btn-booking i {
+  margin-right: 8px;
+}
