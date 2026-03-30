@@ -558,7 +558,21 @@
     text-align: center;
   }
   .slider .single-slider {
-    height: 90vh;
+    height: auto;
+    min-height: 100vh;
+  }
+  .slider .single-slider .image {
+    max-height: 55vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-image {
+    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 95%);
+    mask-image: linear-gradient(to bottom, black 50%, transparent 95%);
+    max-height: 55vh;
+    object-fit: contain;
+    object-position: top center;
   }
   .schedule {
     background: #fff;
