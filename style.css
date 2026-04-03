@@ -455,12 +455,11 @@ body {
   transform: scale(0);
 }
 .carousel-image {
-  border-radius: 3%;
+  border-radius: 12px;
   max-width: 100%;
   height: auto;
   margin-top: 40px;
-  -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
-  mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
 }
 
 .fade-portrait {

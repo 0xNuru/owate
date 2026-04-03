@@ -568,11 +568,10 @@
     justify-content: center;
   }
   .carousel-image {
-    -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 95%);
-    mask-image: linear-gradient(to bottom, black 50%, transparent 95%);
     max-height: 55vh;
-    object-fit: contain;
+    object-fit: cover;
     object-position: top center;
+    border-radius: 10px;
   }
   .schedule {
     background: #fff;
